@@ -3,5 +3,8 @@
   "item.oiiamod.raw_oiiaite": "Raw Oiia-ite",
 
   "block.oiiamod.oiiaite_block": "Block of Oiia-ite",
-  "block.oiiamod.oiiaite_ore": "Oiia-ite Ore"
+  "block.oiiamod.oiiaite_ore": "Oiia-ite Ore",
+
+  "creativetab.oiiamod.oiia_items": "Oiia-ite Items",
+  "creativetab.oiiamod.oiia_blocks": "Oiia-ite Blocks"
 }
