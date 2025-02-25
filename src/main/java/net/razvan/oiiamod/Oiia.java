@@ -1,9 +1,9 @@
-package net.razvan.oiia;
+package net.razvan.oiiamod;
 
 import net.minecraft.world.item.CreativeModeTabs;
-import net.razvan.oiia.block.ModBlocks;
-import net.razvan.oiia.item.ModCreativeModeTabs;
-import net.razvan.oiia.item.ModItems;
+import net.razvan.oiiamod.block.ModBlocks;
+import net.razvan.oiiamod.item.ModCreativeModeTabs;
+import net.razvan.oiiamod.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;

@@ -1,4 +1,4 @@
-package net.razvan.oiia.block;
+package net.razvan.oiiamod.block;
 
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -10,8 +10,8 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.razvan.oiia.Oiia;
-import net.razvan.oiia.item.ModItems;
+import net.razvan.oiiamod.Oiia;
+import net.razvan.oiiamod.item.ModItems;
 
 import java.util.function.Supplier;
 
@@ -24,7 +24,7 @@ public class ModBlocks {
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST))); // !!double shift Blocks non-project!!
     public static final DeferredBlock<Block> OIIAITE_ORE = registerBlock("oiiaite_ore",
             () -> new DropExperienceBlock(UniformInt.of(2,4),
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
