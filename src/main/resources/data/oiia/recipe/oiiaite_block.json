@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "o": {
+      "item": "oiiamod:oiiaite"
+    }
+  },
+    "pattern": [
+      "ooo",
+      "ooo",
+      "ooo"
+    ],
+    "result": {
+      "count": 1,
+      "id": "oiiamod:oiiaite_block"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 50,
+  "experience": 8,
+  "ingredient": {
+    "item": "oiiamod:oiiaite_ore"
+  },
+  "result": {
+    "id": "oiiamod:oiiaite"
+  }
+}
