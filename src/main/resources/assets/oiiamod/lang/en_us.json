@@ -1,5 +1,4 @@
 {
-  "itemGroup.examplemod": "Example Mod Tab",
-  "block.examplemod.example_block": "Example Block",
-  "item.examplemod.example_item": "Example Item"
+  "item.oiiamod.oiiaite": "Oiia-ite",
+  "item.oiiamod.raw_oiiaite": "Raw Oiia-ite"
 }

@@ -1,4 +1,4 @@
-package net.razvan.oiiamod;
+package net.razvan.oiia;
 
 import java.util.List;
 import java.util.Set;

@@ -1,7 +1,7 @@
-package net.razvan.oiiamod;
+package net.razvan.oiia;
 
 import net.minecraft.world.item.CreativeModeTabs;
-import net.razvan.oiiamod.item.ModItems;
+import net.razvan.oiia.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -55,6 +55,7 @@ public class Oiia {
     {
         if(event.getTabKey()== CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.OIIAITE);
+            event.accept(ModItems.RAW_OIIAITE);
         }
     }
 
