@@ -1,6 +1,7 @@
 package net.razvan.oiia;
 
 import net.minecraft.world.item.CreativeModeTabs;
+import net.razvan.oiia.block.ModBlocks;
 import net.razvan.oiia.item.ModItems;
 import org.slf4j.Logger;
 
@@ -37,7 +38,7 @@ public class Oiia {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
-
+        ModBlocks.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -53,9 +54,13 @@ public class Oiia {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if(event.getTabKey()== CreativeModeTabs.INGREDIENTS){
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.OIIAITE);
             event.accept(ModItems.RAW_OIIAITE);
+        }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.OIIAITE_BLOCK);
+            event.accept(ModBlocks.OIIAITE_ORE);
         }
     }
 

@@ -1,4 +1,7 @@
 {
   "item.oiiamod.oiiaite": "Oiia-ite",
-  "item.oiiamod.raw_oiiaite": "Raw Oiia-ite"
+  "item.oiiamod.raw_oiiaite": "Raw Oiia-ite",
+
+  "block.oiiamod.oiiaite_block": "Block of Oiia-ite",
+  "block.oiiamod.oiiaite_ore": "Oiia-ite Ore"
 }
