@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "o": {
+      "item": "oiiamod:oiiaite"
+    }  ,
+    "g": {
+      "item": "minecraft:ghast_tear"
+    }  ,
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+    "pattern": [
+      "o o",
+      "ogo",
+      " s "
+    ],
+    "result": {
+      "count": 1,
+      "id": "oiiamod:oiiator"
+    }
+  }
+}
