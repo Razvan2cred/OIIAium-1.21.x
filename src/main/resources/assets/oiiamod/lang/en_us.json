@@ -12,5 +12,12 @@
   "block.oiiamod.magic_block": "Magic Block?",
 
   "creativetab.oiiamod.oiia_items": "Oiia-ite Items",
-  "creativetab.oiiamod.oiia_blocks": "Oiia-ite Blocks"
+  "creativetab.oiiamod.oiia_blocks": "Oiia-ite Blocks",
+
+  "tooltip.oiiamod.magic_block.tooltip": "Hey! That's neither an §eegg§r or a §8netherite§r ingot!!!",
+  
+  "tooltip.oiiamod.oiiator.shift_down": "§8O§r§3I§r§eI§r§7A§r§dI",
+  "tooltip.oiiamod.oiiator": "Press §dShift§r if Gay",
+
+  "tooltip.oiiamod.cat_poo.tooltip": "Tastes really great!"
 }
