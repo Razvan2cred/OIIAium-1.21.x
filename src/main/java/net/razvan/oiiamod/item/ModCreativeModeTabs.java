@@ -32,6 +32,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.OIIAITE_BLOCK);
                         output.accept(ModBlocks.OIIAITE_ORE);
+                        output.accept(ModBlocks.MAGIC_BLOCK);
                     }).build());
     public static void register(IEventBus eventBus){
         CREATIVE_MODE_TAB.register(eventBus);
