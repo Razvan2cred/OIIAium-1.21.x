@@ -22,6 +22,8 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.OIIAITE);
                         output.accept(ModItems.RAW_OIIAITE);
+
+                        output.accept(ModItems.OIIATOR);
                     }).build());
     public static final Supplier<CreativeModeTab> OIIA_BLOCKS_TAB = CREATIVE_MODE_TAB.register("oiia_blocks_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.OIIAITE_BLOCK.get()))
