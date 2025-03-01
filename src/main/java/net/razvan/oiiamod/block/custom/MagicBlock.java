@@ -17,6 +17,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.razvan.oiiamod.item.ModItems;
+import net.razvan.oiiamod.util.ModTags;
 
 import java.util.List;
 
@@ -36,7 +37,7 @@ public class MagicBlock extends Block {
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
         if(entity instanceof ItemEntity itemEntity){
-            if(itemEntity.getItem().getItem() == Items.NETHERITE_INGOT){
+            if(isValidItem(itemEntity.getItem())){
                 itemEntity.setItem(new ItemStack(ModItems.OIIAITE.get(), itemEntity.getItem().getCount()));
             }
             if(itemEntity.getItem().getItem() == Items.EGG){
@@ -46,6 +47,10 @@ public class MagicBlock extends Block {
 
 
         super.stepOn(level, pos, state, entity);
+    }
+
+    private boolean isValidItem(ItemStack item) {
+        return item.is(ModTags.Items.TRANSFORMABLE_ITEMS);
     }
 
     @Override
