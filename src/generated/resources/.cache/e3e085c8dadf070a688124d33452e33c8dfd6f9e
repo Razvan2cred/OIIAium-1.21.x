@@ -1,0 +1,13 @@
+// 1.21.1	2025-03-02T12:55:04.4461337	Block States: oiiamod
+0b11f3fb6a0fdd0efa4af37720672da29f759777 assets/oiiamod/blockstates/magic_block.json
+b9f2a1fd55119fac4b662cce25dd4fce18fa61e2 assets/oiiamod/blockstates/oiiaite_block.json
+414addf85ed56e41a857900cc4ad5b8c15729a60 assets/oiiamod/blockstates/oiiaite_deepslate_ore.json
+e14e48acdb50e5cad441f5ad58e666c61fddb319 assets/oiiamod/blockstates/oiiaite_ore.json
+daca0d0e48141eaf2bbaae26ea8a9ac1227d0a7b assets/oiiamod/models/block/magic_block.json
+096f947899a2becaaf91915c69302320f4d31e3f assets/oiiamod/models/block/oiiaite_block.json
+54d44bec98c1b39dd565d541d300cb46c9c8111b assets/oiiamod/models/block/oiiaite_deepslate_ore.json
+69d28827d2ff6fe052276e9d0a6a35f3d1eb36db assets/oiiamod/models/block/oiiaite_ore.json
+2906eb5cda73f506e5be0a46e130f0c18eb2124b assets/oiiamod/models/item/magic_block.json
+659e426bd4ad5ec6ae5f4f99389dacb49d004cf8 assets/oiiamod/models/item/oiiaite_block.json
+d291a2329ccc9535bfb1f6009d4e06f45794e7dd assets/oiiamod/models/item/oiiaite_deepslate_ore.json
+dd9f69e42491a3e92fe837d4f9564926122c353b assets/oiiamod/models/item/oiiaite_ore.json

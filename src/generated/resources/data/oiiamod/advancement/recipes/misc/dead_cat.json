@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_half_dead_cat": {
+      "conditions": {
+        "items": [
+          {
+            "items": "oiiamod:half_dead_cat"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "oiiamod:dead_cat"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_half_dead_cat"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "oiiamod:dead_cat"
+    ]
+  }
+}

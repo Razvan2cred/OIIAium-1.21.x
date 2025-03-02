@@ -64,6 +64,7 @@ public class Oiia {
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.OIIAITE_BLOCK);
             event.accept(ModBlocks.OIIAITE_ORE);
+            event.accept(ModBlocks.OIIAITE_DEEPSLATE_ORE);
         }
     }
 

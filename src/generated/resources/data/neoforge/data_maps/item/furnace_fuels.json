@@ -1,0 +1,10 @@
+{
+  "values": {
+    "oiiamod:dead_cat": {
+      "burn_time": 1200
+    },
+    "oiiamod:half_dead_cat": {
+      "burn_time": 600
+    }
+  }
+}

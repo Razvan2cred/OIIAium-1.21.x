@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_oiiaite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "oiiamod:oiiaite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "oiiamod:oiiaite_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_oiiaite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "oiiamod:oiiaite_block"
+    ]
+  }
+}
