@@ -2,6 +2,7 @@ package net.razvan.oiiamod;
 
 import net.minecraft.world.item.CreativeModeTabs;
 import net.razvan.oiiamod.block.ModBlocks;
+import net.razvan.oiiamod.component.ModDataComponents;
 import net.razvan.oiiamod.item.ModCreativeModeTabs;
 import net.razvan.oiiamod.item.ModItems;
 import org.slf4j.Logger;
@@ -45,6 +46,7 @@ public class Oiia {
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
+        ModDataComponents.register(modEventBus);
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }

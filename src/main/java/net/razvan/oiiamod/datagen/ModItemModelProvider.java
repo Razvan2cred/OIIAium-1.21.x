@@ -3,9 +3,11 @@ package net.razvan.oiiamod.datagen;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.razvan.oiiamod.Oiia;
 import net.razvan.oiiamod.block.ModBlocks;
 import net.razvan.oiiamod.item.ModItems;
@@ -32,6 +34,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         wallItem(ModBlocks.OIIA_WALL, ModBlocks.OIIAITE_BLOCK);
 
         basicItem(ModBlocks.OIIA_DOOR.asItem());
+
+        handheldItem(ModItems.OIIA_SWORD);
+        handheldItem(ModItems.OIIA_PICKAXE);
+        handheldItem(ModItems.OIIA_AXE);
+        handheldItem(ModItems.OIIA_SHOVEL);
+        handheldItem(ModItems.OIIA_HOE);
     }
     public void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
         this.withExistingParent(block.getId().getPath(), mcLoc("block/button_inventory"))
@@ -51,4 +59,9 @@ public class ModItemModelProvider extends ItemModelProvider {
                         "block/" + baseBlock.getId().getPath()));
     }
 
+    private ItemModelBuilder handheldItem(DeferredItem<?> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/handheld")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(Oiia.MOD_ID,"item/" + item.getId().getPath()));
+    }
 }

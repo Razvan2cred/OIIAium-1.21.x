@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "oiiamod:block/oiia_lamp_on"
+    "all": "oiia:block/oiia_lamp_off"
   }
 }

@@ -15,6 +15,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.razvan.oiiamod.block.ModBlocks;
+import net.razvan.oiiamod.component.ModDataComponents;
 
 import java.util.List;
 import java.util.Map;
@@ -46,6 +47,8 @@ public class OiiaItem extends Item {
                         item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
                 level.playSound(null, context.getClickedPos(), SoundEvents.CAT_PURREOW, SoundSource.BLOCKS);
+
+                context.getItemInHand().set(ModDataComponents.COORDINATES, context.getClickedPos());
             }
         }
 
@@ -58,6 +61,10 @@ public class OiiaItem extends Item {
             tooltipComponents.add(Component.translatable("tooltip.oiiamod.oiiator.shift_down"));
         }else {
             tooltipComponents.add(Component.translatable("tooltip.oiiamod.oiiator"));
+        }
+
+        if(stack.get(ModDataComponents.COORDINATES) != null) {
+            tooltipComponents.add(Component.literal("Last Block oiia-ed at " + stack.get(ModDataComponents.COORDINATES)));
         }
 
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);

@@ -27,6 +27,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CAT_POOP);
                         output.accept(ModItems.DEAD_CAT);
                         output.accept(ModItems.HALF_DEAD_CAT);
+
+                        output.accept(ModItems.OIIA_SWORD);
+                        output.accept(ModItems.OIIA_PICKAXE);
+                        output.accept(ModItems.OIIA_AXE);
+                        output.accept(ModItems.OIIA_SHOVEL);
+                        output.accept(ModItems.OIIA_HOE);
                     }).build());
     public static final Supplier<CreativeModeTab> OIIA_BLOCKS_TAB = CREATIVE_MODE_TAB.register("oiia_blocks_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.OIIAITE_BLOCK.get()))

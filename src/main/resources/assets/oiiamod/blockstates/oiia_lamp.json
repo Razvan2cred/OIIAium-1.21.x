@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "oiia:block/oiia_lamp_off"
+    },
+    "clicked=true": {
+      "model": "oiia:block/oiia_lamp_on"
+    }
+  }
+}

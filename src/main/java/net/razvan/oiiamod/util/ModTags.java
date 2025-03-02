@@ -10,6 +10,9 @@ import net.razvan.oiiamod.Oiia;
 
 public class ModTags {
     public static class Blocks {
+        public static final TagKey<Block> NEEDS_OIIA_TOOL = createTag("needs_oiia_tool");
+        public static final TagKey<Block> INCORRECT_FOR_OIIA_TOOL = createTag("incorrect_for_oiia_tool");
+
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(Oiia.MOD_ID, name));
         }

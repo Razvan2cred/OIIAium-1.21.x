@@ -3,6 +3,7 @@ package net.razvan.oiiamod.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -25,5 +26,16 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(Items.EGG)
                 .add(ModItems.DEAD_CAT.get())
                 .add(Items.NETHERITE_INGOT);
+
+        tag(ItemTags.SWORDS)
+                .add(ModItems.OIIA_SWORD.get());
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.OIIA_PICKAXE.get());
+        tag(ItemTags.AXES)
+                .add(ModItems.OIIA_AXE.get());
+        tag(ItemTags.SHOVELS)
+                .add(ModItems.OIIA_SHOVEL.get());
+        tag(ItemTags.HOES)
+                .add(ModItems.OIIA_HOE.get());
     }
 }

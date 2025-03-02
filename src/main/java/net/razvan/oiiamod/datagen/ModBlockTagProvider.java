@@ -8,6 +8,7 @@ import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.razvan.oiiamod.Oiia;
 import net.razvan.oiiamod.block.ModBlocks;
+import net.razvan.oiiamod.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -32,6 +33,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.FENCES).add(ModBlocks.OIIA_FENCE.get());
         tag(BlockTags.FENCE_GATES).add(ModBlocks.OIIA_FENCE_GATE.get());
         tag(BlockTags.WALLS).add(ModBlocks.OIIA_WALL.get());
+
+        tag(ModTags.Blocks.NEEDS_OIIA_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+        tag(ModTags.Blocks.INCORRECT_FOR_OIIA_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .remove(ModTags.Blocks.NEEDS_OIIA_TOOL);
 
     }
 }
