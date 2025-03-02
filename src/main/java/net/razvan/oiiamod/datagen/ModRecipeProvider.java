@@ -85,7 +85,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OIIAITE_HELMET.get())
                 .pattern("OOO")
                 .pattern("O O")
-                .pattern("   ")
                 .define('O', ModItems.OIIAITE.get())
                 .unlockedBy("has_oiiaite", has(ModItems.OIIAITE)).save(recipeOutput);
 
@@ -106,7 +105,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OIIAITE_BOOTS.get())
                 .pattern("O O")
                 .pattern("O O")
-                .pattern("   ")
                 .define('O', ModItems.OIIAITE.get())
                 .unlockedBy("has_oiiaite", has(ModItems.OIIAITE)).save(recipeOutput);
 
@@ -118,6 +116,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.HALF_DEAD_CAT.get())
                 .requires(Items.FLINT)
                 .unlockedBy("has_half_dead_cat", has(ModItems.HALF_DEAD_CAT)).save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.OIIAITE_HORSE_ARMOR.get())
+                .requires(ModItems.OIIAITE.get())
+                .requires(Items.IRON_BLOCK)
+                .unlockedBy("has_oiiaite", has(ModItems.OIIAITE)).save(recipeOutput);
 
         oreSmelting(recipeOutput, OIIAITE_SMELTABLES, RecipeCategory.MISC, ModItems.OIIAITE.get(), 4f, 200, "oiiaite");
         oreBlasting(recipeOutput, OIIAITE_SMELTABLES, RecipeCategory.MISC, ModItems.OIIAITE.get(), 4f, 100, "oiiaite");

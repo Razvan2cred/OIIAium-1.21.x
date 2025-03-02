@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-02T22:46:29.187723	Recipes
+// 1.21.1	2025-03-02T23:26:11.1344088	Recipes
 ec6e9257b9ede57b193feecaf888307beb8936a3 data/minecraft/advancement/recipes/misc/oiiaite_from_blasting_oiiaite_deepslate_ore.json
 034ecf5b75b0fee444276bb3e97d11d37bf8e34a data/minecraft/advancement/recipes/misc/oiiaite_from_blasting_oiiaite_ore.json
 25519836a4ffe90ff233fdccff1a627b55462356 data/minecraft/advancement/recipes/misc/oiiaite_from_blasting_raw_oiiaite.json
@@ -21,6 +21,7 @@ a7160ba3db96472b6ba173d5085e11744aceec7b data/oiiamod/advancement/recipes/misc/o
 42e161b5f8beb8bebc996bf2f4bab312cfa44f64 data/oiiamod/advancement/recipes/misc/oiiaite_boots.json
 c416c931cd7ccd98748b27c9d96ca84d2abd825f data/oiiamod/advancement/recipes/misc/oiiaite_chestplate.json
 01ba64bbf66a6d4fbfdd22e2bffa41dc16bda134 data/oiiamod/advancement/recipes/misc/oiiaite_helmet.json
+b1944c6a9eb0ead22937c07dd3ffb8ddd9e750e1 data/oiiamod/advancement/recipes/misc/oiiaite_horse_armor.json
 b8d45c65a6dc0310bb9b51bf2f71a150fee7df48 data/oiiamod/advancement/recipes/misc/oiiaite_leggings.json
 6903cc50b867f116c6087671c1d18683522f01fa data/oiiamod/advancement/recipes/misc/oiia_axe.json
 155fb58359f56e5ee3fff0d29bcc134b3a62dbaf data/oiiamod/advancement/recipes/misc/oiia_hammer.json
@@ -36,9 +37,10 @@ bc07fe02b3998efc80cbc97352b4702d11c4f0cd data/oiiamod/advancement/recipes/misc/o
 383828e506a18e7a739955b2970dd721648383bf data/oiiamod/recipe/dead_cat.json
 753b181922aa5698b65eb90bfa55915a34e078d9 data/oiiamod/recipe/oiiaite.json
 cb212cad5a36e2f0b2de01205a8d6ff84e711632 data/oiiamod/recipe/oiiaite_block.json
-30e9f0416041ca76d4f963bd7e52e6457d51a530 data/oiiamod/recipe/oiiaite_boots.json
+2235e93be1256e482d2ddaa901a33d1a987b7757 data/oiiamod/recipe/oiiaite_boots.json
 911c42aadf53c07cb6cc8003362defd08d4c37ab data/oiiamod/recipe/oiiaite_chestplate.json
-79cb785c659dafe062ea6beab24e946a5997f167 data/oiiamod/recipe/oiiaite_helmet.json
+74c6f705f51bee12e1b036d5ada416e0d4215685 data/oiiamod/recipe/oiiaite_helmet.json
+c195f1071ff277a5753a76a9fd08dae215b595dd data/oiiamod/recipe/oiiaite_horse_armor.json
 4bb09af88f01ff62536d872b3e0d9bee99a22053 data/oiiamod/recipe/oiiaite_leggings.json
 d4e3026182c51ef20bac92df900461ad8d5b7556 data/oiiamod/recipe/oiia_axe.json
 d763cba7aadac51235abfcc060c697ed8a56468f data/oiiamod/recipe/oiia_button.json

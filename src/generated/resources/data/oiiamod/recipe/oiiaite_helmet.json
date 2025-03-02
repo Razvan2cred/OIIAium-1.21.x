@@ -8,8 +8,7 @@
   },
   "pattern": [
     "OOO",
-    "O O",
-    "   "
+    "O O"
   ],
   "result": {
     "count": 1,

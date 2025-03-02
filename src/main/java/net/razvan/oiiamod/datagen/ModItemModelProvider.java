@@ -67,6 +67,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.OIIAITE_CHESTPLATE);
         trimmedArmorItem(ModItems.OIIAITE_LEGGINGS);
         trimmedArmorItem(ModItems.OIIAITE_BOOTS);
+
+        basicItem(ModItems.OIIAITE_HORSE_ARMOR.get());
     }
     // Shoutout to El_Redstoniano for making this
     private void trimmedArmorItem(DeferredItem<ArmorItem> itemDeferredItem) {
