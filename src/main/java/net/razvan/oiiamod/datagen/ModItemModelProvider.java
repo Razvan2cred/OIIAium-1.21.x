@@ -48,7 +48,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.DEAD_CAT.get());
         basicItem(ModItems.HALF_DEAD_CAT.get());
 
-        basicItem(ModItems.OIIATOR.get());
+        //basicItem(ModItems.OIIATOR.get());
 
         buttonItem(ModBlocks.OIIA_BUTTON, ModBlocks.OIIAITE_BLOCK);
         fenceItem(ModBlocks.OIIA_FENCE, ModBlocks.OIIAITE_BLOCK);

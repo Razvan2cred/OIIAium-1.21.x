@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "oiiamod:item/oiiator"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "oiiamod:used": 1
+      },
+      "model": "oiiamod:item/oiiator_used"
+    }
+  ]
+}

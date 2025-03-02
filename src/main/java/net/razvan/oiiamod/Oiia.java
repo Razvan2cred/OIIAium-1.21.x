@@ -5,6 +5,7 @@ import net.razvan.oiiamod.block.ModBlocks;
 import net.razvan.oiiamod.component.ModDataComponents;
 import net.razvan.oiiamod.item.ModCreativeModeTabs;
 import net.razvan.oiiamod.item.ModItems;
+import net.razvan.oiiamod.util.ModItemProperties;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -85,7 +86,7 @@ public class Oiia {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            ModItemProperties.addCustomItemProperties();
         }
     }
 }
