@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "oiiaite",
+  "key": {
+    "#": {
+      "item": "oiiamod:oiiaite"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "oiiamod:oiia_stairs"
+  }
+}

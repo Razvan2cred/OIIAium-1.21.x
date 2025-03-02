@@ -37,6 +37,20 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.OIIAITE_ORE);
                         output.accept(ModBlocks.OIIAITE_DEEPSLATE_ORE);
                         output.accept(ModBlocks.MAGIC_BLOCK);
+
+                        output.accept(ModBlocks.OIIA_STAIRS);
+                        output.accept(ModBlocks.OIIA_SLAB);
+
+                        output.accept(ModBlocks.OIIA_PRESSURE_PLATE);
+                        output.accept(ModBlocks.OIIA_BUTTON);
+
+                        output.accept(ModBlocks.OIIA_DOOR);
+                        output.accept(ModBlocks.OIIA_TRAPDOOR);
+
+                        output.accept(ModBlocks.OIIA_FENCE);
+                        output.accept(ModBlocks.OIIA_FENCE_GATE);
+
+                        output.accept(ModBlocks.OIIA_WALL);
                     }).build());
     public static void register(IEventBus eventBus){
         CREATIVE_MODE_TAB.register(eventBus);

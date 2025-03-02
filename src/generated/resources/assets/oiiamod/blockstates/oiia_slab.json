@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "oiiamod:block/oiia_slab"
+    },
+    "type=double": {
+      "model": "oiiamod:block/oiiaite_block"
+    },
+    "type=top": {
+      "model": "oiiamod:block/oiia_slab_top"
+    }
+  }
+}

@@ -14,6 +14,7 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
+import net.neoforged.fml.common.Mod;
 import net.razvan.oiiamod.block.ModBlocks;
 import net.razvan.oiiamod.item.ModItems;
 
@@ -33,7 +34,24 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.OIIAITE_ORE.get(), ModItems.RAW_OIIAITE.get()));
         add(ModBlocks.OIIAITE_DEEPSLATE_ORE.get(),
             block -> createMultipleOreDrops(ModBlocks.OIIAITE_DEEPSLATE_ORE.get(), ModItems.RAW_OIIAITE.get(),2,3));
+
+        dropSelf(ModBlocks.OIIA_STAIRS.get());
+        add(ModBlocks.OIIA_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.OIIA_SLAB.get()));
+
+        dropSelf(ModBlocks.OIIA_BUTTON.get());
+        dropSelf(ModBlocks.OIIA_PRESSURE_PLATE.get());
+
+        dropSelf(ModBlocks.OIIA_FENCE.get());
+        dropSelf(ModBlocks.OIIA_FENCE_GATE.get());
+        dropSelf(ModBlocks.OIIA_WALL.get());
+        dropSelf(ModBlocks.OIIA_TRAPDOOR.get());
+
+        add(ModBlocks.OIIA_DOOR.get(),
+                block -> createDoorTable(ModBlocks.OIIA_DOOR.get()));
     }
+
+
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
         HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);

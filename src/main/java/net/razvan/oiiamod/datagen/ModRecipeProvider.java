@@ -45,5 +45,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreSmelting(recipeOutput, OIIAITE_SMELTABLES, RecipeCategory.MISC, ModItems.OIIAITE.get(), 4f, 200, "oiiaite");
         oreBlasting(recipeOutput, OIIAITE_SMELTABLES, RecipeCategory.MISC, ModItems.OIIAITE.get(), 4f, 100, "oiiaite");
 
+        stairBuilder(ModBlocks.OIIA_STAIRS.get(), Ingredient.of(ModItems.OIIAITE)).group("oiiaite")
+                .unlockedBy("has_oiiaite", has(ModItems.OIIAITE)).save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.OIIA_SLAB.get(), ModItems.OIIAITE.get());
+        buttonBuilder(ModBlocks.OIIA_BUTTON.get(), Ingredient.of(ModItems.OIIAITE.get())).group("bismuth")
+                .unlockedBy("has_bismuth", has(ModItems.OIIAITE.get())).save(recipeOutput);
+        pressurePlate(recipeOutput, ModBlocks.OIIA_PRESSURE_PLATE.get(), ModItems.OIIAITE.get());
+
+        fenceBuilder(ModBlocks.OIIA_FENCE.get(), Ingredient.of(ModItems.OIIAITE.get())).group("bismuth")
+                .unlockedBy("has_bismuth", has(ModItems.OIIAITE.get())).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.OIIA_FENCE_GATE.get(), Ingredient.of(ModItems.OIIAITE.get())).group("bismuth")
+                .unlockedBy("has_bismuth", has(ModItems.OIIAITE.get())).save(recipeOutput);
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.OIIA_WALL.get(), ModItems.OIIAITE.get());
+
+        doorBuilder(ModBlocks.OIIA_DOOR.get(), Ingredient.of(ModItems.OIIAITE.get())).group("bismuth")
+                .unlockedBy("has_bismuth", has(ModItems.OIIAITE.get())).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.OIIA_TRAPDOOR.get(), Ingredient.of(ModItems.OIIAITE.get())).group("bismuth")
+                .unlockedBy("has_bismuth", has(ModItems.OIIAITE.get())).save(recipeOutput);
     }
 }

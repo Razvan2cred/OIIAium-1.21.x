@@ -1,9 +1,13 @@
 package net.razvan.oiiamod.datagen;
 
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.registries.DeferredBlock;
 import net.razvan.oiiamod.Oiia;
+import net.razvan.oiiamod.block.ModBlocks;
 import net.razvan.oiiamod.item.ModItems;
 
 public class ModItemModelProvider extends ItemModelProvider {
@@ -22,7 +26,29 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.HALF_DEAD_CAT.get());
 
         basicItem(ModItems.OIIATOR.get());
+
+        buttonItem(ModBlocks.OIIA_BUTTON, ModBlocks.OIIAITE_BLOCK);
+        fenceItem(ModBlocks.OIIA_FENCE, ModBlocks.OIIAITE_BLOCK);
+        wallItem(ModBlocks.OIIA_WALL, ModBlocks.OIIAITE_BLOCK);
+
+        basicItem(ModBlocks.OIIA_DOOR.asItem());
+    }
+    public void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
+        this.withExistingParent(block.getId().getPath(), mcLoc("block/button_inventory"))
+                .texture("texture",  ResourceLocation.fromNamespaceAndPath(Oiia.MOD_ID,
+                        "block/" + baseBlock.getId().getPath()));
     }
 
+    public void fenceItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
+        this.withExistingParent(block.getId().getPath(), mcLoc("block/fence_inventory"))
+                .texture("texture",  ResourceLocation.fromNamespaceAndPath(Oiia.MOD_ID,
+                        "block/" + baseBlock.getId().getPath()));
+    }
+
+    public void wallItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
+        this.withExistingParent(block.getId().getPath(), mcLoc("block/wall_inventory"))
+                .texture("wall",  ResourceLocation.fromNamespaceAndPath(Oiia.MOD_ID,
+                        "block/" + baseBlock.getId().getPath()));
+    }
 
 }

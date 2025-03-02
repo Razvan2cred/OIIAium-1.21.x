@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "oiiamod:block/oiiaite_block",
+    "side": "oiiamod:block/oiiaite_block",
+    "top": "oiiamod:block/oiiaite_block"
+  }
+}

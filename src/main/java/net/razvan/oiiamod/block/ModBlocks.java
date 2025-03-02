@@ -3,10 +3,10 @@ package net.razvan.oiiamod.block;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -14,6 +14,7 @@ import net.razvan.oiiamod.Oiia;
 import net.razvan.oiiamod.block.custom.MagicBlock;
 import net.razvan.oiiamod.item.ModItems;
 
+import javax.swing.*;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -32,6 +33,33 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
             () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).noLootTable()));
+
+    public static final DeferredBlock<StairBlock> OIIA_STAIRS = registerBlock("oiia_stairs",
+            () -> new StairBlock(ModBlocks.OIIAITE_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<SlabBlock> OIIA_SLAB = registerBlock("oiia_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<PressurePlateBlock> OIIA_PRESSURE_PLATE = registerBlock("oiia_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.IRON,
+                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<ButtonBlock> OIIA_BUTTON = registerBlock("oiia_button",
+            () -> new ButtonBlock(BlockSetType.IRON, 20,
+                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission()));
+
+    public static final DeferredBlock<FenceBlock> OIIA_FENCE = registerBlock("oiia_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<FenceGateBlock> OIIA_FENCE_GATE = registerBlock("oiia_fence_gate",
+            () -> new FenceGateBlock(WoodType.ACACIA, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<WallBlock> OIIA_WALL = registerBlock("oiia_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+
+
+    public static final DeferredBlock<DoorBlock> OIIA_DOOR = registerBlock("oiia_door",
+            () -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
+    public static final DeferredBlock<TrapDoorBlock> OIIA_TRAPDOOR = registerBlock("oiia_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

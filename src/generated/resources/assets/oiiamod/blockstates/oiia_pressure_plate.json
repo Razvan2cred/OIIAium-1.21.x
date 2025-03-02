@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "oiiamod:block/oiia_pressure_plate"
+    },
+    "powered=true": {
+      "model": "oiiamod:block/oiia_pressure_plate_down"
+    }
+  }
+}
