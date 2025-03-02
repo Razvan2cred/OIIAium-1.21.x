@@ -6,7 +6,7 @@
   "item.oiiamod.oiia_pickaxe": "§8O§r§3I§r§eI§r§7A Pickaxe",
   "item.oiiamod.oiia_axe": "§8O§r§3I§r§eI§r§7A§r Axe",
   "item.oiiamod.oiia_shovel": "§8O§r§3I§r§eI§r§7A Shovel",
-  "item.oiiamod.oiia_hoe": "§8O§r§3I§r§eI§r§7A§r§8I§r§3O§r§eU§r§7I§r§8I§r§3I§r§eA",
+  "item.oiiamod.oiia_hoe": "§8O§r§3I§r§eI§r§7A§r§8I§r§3O§r§eU§r§7I§r§8I§r§3I§r§eA§r",
 
   "item.oiiamod.oiia_hammer": "Mega Pickaxe",
   "item.oiiamod.compound_bow": "Cat Killer",
@@ -22,6 +22,9 @@
   "item.oiiamod.cat_poop": "Cat Poop",
   "item.oiiamod.dead_cat": "Dead Cat",
   "item.oiiamod.half_dead_cat": "Half-Dead Cat",
+
+  "item.oiiamod.oiia_tech_music_disc": "§8O§r§3I§r§eI§r§7A§r",
+  "item.oiiamod.oiia_tech_music_disc.desc": "§8O§r§3I§r§eI§r§7A§r§8I§r§3O§r§eU§r§7I§r§8I§r§3I§r§eA§r§8O§r§3I§r§eI§r§7A§r§8I§r§3O§r§eU§r§7I§r§8I§r§3I§r§eA§r§8O§r§3I§r§eI§r§7A§r§8I§r§3O§r§eU§r§7I§r§8I§r§3I§r§eA§r§8O§r§3I§r§eI§r§7A§r§8I§r§3O§r§eU§r§7I§r§8I§r§3I§r§eA§r§8O§r§3I§r§eI§r§7A§r§8I§r§3O§r§eU§r§7I§r§8I§r§3I§r§eA§r",
 
   "block.oiiamod.oiiaite_block": "Block of §8O§r§3I§r§eI§r§7A§r-ite",
   "block.oiiamod.oiiaite_ore": "§8O§r§3I§r§eI§r§7A§r-ite Ore",

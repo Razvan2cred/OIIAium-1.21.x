@@ -34,5 +34,13 @@
     "sounds": [
       "oiiamod:magic_block_fall"
     ]
+  },
+  "oiia_tech": {
+    "sounds": [
+      {
+        "name": "oiiamod:oiia_tech",
+        "stream": true
+      }
+    ]
   }
 }

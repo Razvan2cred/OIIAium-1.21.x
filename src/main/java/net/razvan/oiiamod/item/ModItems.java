@@ -10,6 +10,7 @@ import net.razvan.oiiamod.item.custom.FuelItem;
 import net.razvan.oiiamod.item.custom.HammerItem;
 import net.razvan.oiiamod.item.custom.ModArmorItem;
 import net.razvan.oiiamod.item.custom.OiiaItem;
+import net.razvan.oiiamod.sound.ModSounds;
 
 import java.util.List;
 import java.util.Properties;
@@ -73,6 +74,8 @@ public class ModItems {
                 false, new Item.Properties().stacksTo(1)));
     public static final DeferredItem<Item> COMPOUND_BOW = ITEMS.register("compound_bow",
             () -> new BowItem(new Item.Properties().durability(690)));
+    public static final DeferredItem<Item> OIIA_TECH_MUSIC_DISC = ITEMS.register("oiia_tech_music_disc",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.OIIA_TECH_KEY).stacksTo(1).fireResistant()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
