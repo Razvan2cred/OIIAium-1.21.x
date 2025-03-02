@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-02T16:02:21.5391955	Loot Tables
+// 1.21.1	2025-03-02T17:14:50.7303108	Loot Tables
 a9861f671a5de4b5830aa8ed5b23bd0bd6ca5168 data/oiiamod/loot_table/blocks/oiiaite_block.json
 3ad3b175e79315c376015afd1e5da1c10dab1c06 data/oiiamod/loot_table/blocks/oiiaite_deepslate_ore.json
 e704aa1925cb241df8533ad504f90640075815d6 data/oiiamod/loot_table/blocks/oiiaite_ore.json
@@ -6,6 +6,7 @@ e704aa1925cb241df8533ad504f90640075815d6 data/oiiamod/loot_table/blocks/oiiaite_
 fc67da84336cbcadeb345033bbaf22b460fa4971 data/oiiamod/loot_table/blocks/oiia_door.json
 c89cda2e593b7d261a94d2fe17a960435f3c89c6 data/oiiamod/loot_table/blocks/oiia_fence.json
 427fef3b95041e0ca9bf2fc665f93ef54ecb1d5c data/oiiamod/loot_table/blocks/oiia_fence_gate.json
+5d79aa6f65d39cda915e153b1f6ea00256974a63 data/oiiamod/loot_table/blocks/oiia_lamp.json
 147cc5794ec28986f8154d6c3767ff9121450c7b data/oiiamod/loot_table/blocks/oiia_pressure_plate.json
 f18548922a83411b2fea8a05023b8ed28495914e data/oiiamod/loot_table/blocks/oiia_slab.json
 288e3c16e062921805ce72173be79457927db655 data/oiiamod/loot_table/blocks/oiia_stairs.json

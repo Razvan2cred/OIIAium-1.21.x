@@ -49,6 +49,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         add(ModBlocks.OIIA_DOOR.get(),
                 block -> createDoorTable(ModBlocks.OIIA_DOOR.get()));
+
+        dropSelf(ModBlocks.OIIA_LAMP.get());
+
     }
 
 

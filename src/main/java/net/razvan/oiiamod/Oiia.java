@@ -65,6 +65,7 @@ public class Oiia {
             event.accept(ModBlocks.OIIAITE_BLOCK);
             event.accept(ModBlocks.OIIAITE_ORE);
             event.accept(ModBlocks.OIIAITE_DEEPSLATE_ORE);
+            event.accept(ModBlocks.OIIA_LAMP);
         }
     }
 

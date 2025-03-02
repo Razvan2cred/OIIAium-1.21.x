@@ -51,6 +51,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.OIIA_FENCE_GATE);
 
                         output.accept(ModBlocks.OIIA_WALL);
+
+                        output.accept(ModBlocks.OIIA_LAMP);
                     }).build());
     public static void register(IEventBus eventBus){
         CREATIVE_MODE_TAB.register(eventBus);

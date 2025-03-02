@@ -1,13 +1,16 @@
 package net.razvan.oiiamod.datagen;
 
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.razvan.oiiamod.Oiia;
 import net.razvan.oiiamod.block.ModBlocks;
+import net.razvan.oiiamod.block.custom.OiiaLampBlock;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -41,9 +44,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
             blockItem(ModBlocks.OIIA_PRESSURE_PLATE);
             blockItem(ModBlocks.OIIA_TRAPDOOR, "_bottom");
             blockItem(ModBlocks.OIIA_FENCE_GATE);
-
-
     }
+
+
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {
         simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));

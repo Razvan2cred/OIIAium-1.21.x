@@ -12,6 +12,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.razvan.oiiamod.Oiia;
 import net.razvan.oiiamod.block.custom.MagicBlock;
+import net.razvan.oiiamod.block.custom.OiiaLampBlock;
 import net.razvan.oiiamod.item.ModItems;
 
 import javax.swing.*;
@@ -60,6 +61,9 @@ public class ModBlocks {
     public static final DeferredBlock<TrapDoorBlock> OIIA_TRAPDOOR = registerBlock("oiia_trapdoor",
             () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
 
+    public static final DeferredBlock<Block> OIIA_LAMP = registerBlock("oiia_lamp",
+            () -> new OiiaLampBlock(BlockBehaviour.Properties.of().strength(2f)
+                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(OiiaLampBlock.CLICKED) ? 15:0)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
