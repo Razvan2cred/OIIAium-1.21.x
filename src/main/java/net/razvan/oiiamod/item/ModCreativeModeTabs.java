@@ -28,6 +28,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.DEAD_CAT);
                         output.accept(ModItems.HALF_DEAD_CAT);
 
+                        output.accept(ModItems.OIIAITE_HELMET);
+                        output.accept(ModItems.OIIAITE_CHESTPLATE);
+                        output.accept(ModItems.OIIAITE_LEGGINGS);
+                        output.accept(ModItems.OIIAITE_BOOTS);
+
                         output.accept(ModItems.OIIA_SWORD);
                         output.accept(ModItems.OIIA_PICKAXE);
                         output.accept(ModItems.OIIA_AXE);

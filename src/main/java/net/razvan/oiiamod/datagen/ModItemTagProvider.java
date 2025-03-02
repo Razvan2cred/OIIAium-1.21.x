@@ -4,6 +4,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -37,5 +38,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.OIIA_SHOVEL.get());
         tag(ItemTags.HOES)
                 .add(ModItems.OIIA_HOE.get());
+
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.OIIAITE_HELMET.get())
+                .add(ModItems.OIIAITE_CHESTPLATE.get())
+                .add(ModItems.OIIAITE_LEGGINGS.get())
+                .add(ModItems.OIIAITE_BOOTS.get());
     }
 }

@@ -3,6 +3,7 @@ package net.razvan.oiiamod.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -79,6 +80,40 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("OOO")
                 .define('O', ModItems.OIIAITE.get())
                 .define('d', Items.DIAMOND_HOE)
+                .unlockedBy("has_oiiaite", has(ModItems.OIIAITE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OIIA_HAMMER.get())
+                .pattern("OOO")
+                .pattern("OoO")
+                .pattern("OOO")
+                .define('O', Items.DIAMOND_PICKAXE)
+                .define('o', ModItems.OIIA_PICKAXE.get())
+                .unlockedBy("has_oiiaite", has(ModItems.OIIAITE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OIIAITE_HELMET.get())
+                .pattern("OOO")
+                .pattern("O O")
+                .define('O', ModItems.OIIAITE.get())
+                .unlockedBy("has_oiiaite", has(ModItems.OIIAITE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OIIAITE_CHESTPLATE.get())
+                .pattern("O O")
+                .pattern("OOO")
+                .pattern("OOO")
+                .define('O', ModItems.OIIAITE.get())
+                .unlockedBy("has_oiiaite", has(ModItems.OIIAITE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OIIAITE_LEGGINGS.get())
+                .pattern("OOO")
+                .pattern("O O")
+                .pattern("O O")
+                .define('O', ModItems.OIIAITE.get())
+                .unlockedBy("has_oiiaite", has(ModItems.OIIAITE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OIIAITE_BOOTS.get())
+                .pattern("O O")
+                .pattern("O O")
+                .define('O', ModItems.OIIAITE.get())
                 .unlockedBy("has_oiiaite", has(ModItems.OIIAITE)).save(recipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.OIIAITE.get(), 9)

@@ -1,7 +1,8 @@
-// 1.21.1	2025-03-02T19:23:56.027105	Tags for minecraft:item mod id oiiamod
+// 1.21.1	2025-03-02T22:27:13.2733176	Tags for minecraft:item mod id oiiamod
 d97ffaa5d82f626482c8f9baa7fd64a033dbf590 data/minecraft/tags/item/axes.json
 02656650c5a2effaa3e66b76099c251d0bdfa3d0 data/minecraft/tags/item/hoes.json
 0a934d166e5118ef45940cb012c474ac51cf00a6 data/minecraft/tags/item/pickaxes.json
 e0db643ca4c6bc2cd6d29337636d9f5387da2db6 data/minecraft/tags/item/shovels.json
 613101eba1542f1ef01ba7b47651421ead0a424e data/minecraft/tags/item/swords.json
+9ff51c41163cd4d6e5bcf2a60d296bef808bd7bc data/minecraft/tags/item/trimmable_armor.json
 58f5fd2e98d6fd19d2ab93274a6fa2a43c2985c1 data/oiiamod/tags/item/transformable_items.json

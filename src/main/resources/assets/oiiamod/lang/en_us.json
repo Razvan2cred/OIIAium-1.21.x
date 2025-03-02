@@ -4,11 +4,16 @@
 
   "item.oiiamod.oiia_sword": "§8O§r§3I§r§eI§r§7A Sword",
   "item.oiiamod.oiia_pickaxe": "§8O§r§3I§r§eI§r§7A Pickaxe",
-  "item.oiiamod.oiia_axe": "§8O§r§3I§r§eI§r§7A Axe",
+  "item.oiiamod.oiia_axe": "§8O§r§3I§r§eI§r§7A§r Axe",
   "item.oiiamod.oiia_shovel": "§8O§r§3I§r§eI§r§7A Shovel",
   "item.oiiamod.oiia_hoe": "§8O§r§3I§r§eI§r§7A§r§8I§r§3O§r§eU§r§7I§r§8I§r§3I§r§eA",
 
   "item.oiiamod.oiia_hammer": "Mega Pickaxe",
+
+  "item.oiiamod.oiiaite_helmet": "§8O§r§3I§r§eI§r§7A§r Helmet",
+  "item.oiiamod.oiiaite_chestplate": "§8O§r§3I§r§eI§r§7A§r Chestplate",
+  "item.oiiamod.oiiaite_leggings": "§8O§r§3I§r§eI§r§7A§r Leggings",
+  "item.oiiamod.oiia_boots": "§8O§r§3I§r§eI§r§7A§r Boots",
 
   "item.oiiamod.oiiator": "Oiia-tor",
   "item.oiiamod.cat_poop": "Cat Poop",

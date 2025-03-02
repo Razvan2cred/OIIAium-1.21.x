@@ -55,6 +55,18 @@ public class ModItems {
     public static final DeferredItem<HammerItem> OIIA_HAMMER = ITEMS.register("oiia_hammer",
             () -> new HammerItem(ModToolTiers.OIIAITE, new Item.Properties().fireResistant()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.OIIAITE, 7f, -3.5f))));
+    public static final DeferredItem<ArmorItem> OIIAITE_HELMET = ITEMS.register("oiiaite_helmet",
+        () -> new ArmorItem(ModArmorMaterials.OIIAITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(35))));
+    public static final DeferredItem<ArmorItem> OIIAITE_CHESTPLATE = ITEMS.register("oiiaite_chestplate",
+        () -> new ArmorItem(ModArmorMaterials.OIIAITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(35))));
+    public static final DeferredItem<ArmorItem> OIIAITE_LEGGINGS = ITEMS.register("oiiaite_leggings",
+        () -> new ArmorItem(ModArmorMaterials.OIIAITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(35))));
+    public static final DeferredItem<ArmorItem> OIIAITE_BOOTS = ITEMS.register("oiiaite_boots",
+        () -> new ArmorItem(ModArmorMaterials.OIIAITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(35))));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
