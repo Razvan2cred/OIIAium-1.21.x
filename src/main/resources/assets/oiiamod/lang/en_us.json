@@ -15,6 +15,7 @@
 
   "block.oiiamod.oiiaite_block": "Block of Oiia-ite",
   "block.oiiamod.oiiaite_ore": "Oiia-ite Ore",
+  "block.oiiamod.oiiaite_deepslate_ore": "Deepslate Oiia-ite Ore",
   "block.oiiamod.magic_block": "Magic Block?",
 
   "block.oiiamod.oiia_stairs": "Oiia Stairs",
@@ -36,7 +37,7 @@
   "creativetab.oiiamod.oiia_items": "Oiia-ite Items",
   "creativetab.oiiamod.oiia_blocks": "Oiia-ite Blocks",
 
-  "tooltip.oiiamod.magic_block.tooltip": "Hey! That's neither an §eegg§r or a §8netherite§r ingot!!!",
+  "tooltip.oiiamod.magic_block.tooltip": "Hey! That's neither an §eegg§r nor a §8netherite§r ingot!!!",
   
   "tooltip.oiiamod.oiiator.shift_down": "§8O§r§3I§r§eI§r§7A§r§dI",
   "tooltip.oiiamod.oiiator": "Press §dShift§r if Gay",
