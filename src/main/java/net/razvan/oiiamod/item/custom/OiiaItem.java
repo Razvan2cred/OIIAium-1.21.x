@@ -16,6 +16,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.razvan.oiiamod.block.ModBlocks;
 import net.razvan.oiiamod.component.ModDataComponents;
+import net.razvan.oiiamod.sound.ModSounds;
 
 import java.util.List;
 import java.util.Map;
@@ -46,7 +47,7 @@ public class OiiaItem extends Item {
                 context.getItemInHand().hurtAndBreak(1, ((ServerLevel) level), context.getPlayer(),
                         item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
-                level.playSound(null, context.getClickedPos(), SoundEvents.CAT_PURREOW, SoundSource.BLOCKS);
+                level.playSound(null, context.getClickedPos(), ModSounds.OIIATOR_USE.get(), SoundSource.BLOCKS);
 
                 context.getItemInHand().set(ModDataComponents.COORDINATES, context.getClickedPos());
             }

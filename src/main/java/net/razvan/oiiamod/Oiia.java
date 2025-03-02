@@ -5,6 +5,7 @@ import net.razvan.oiiamod.block.ModBlocks;
 import net.razvan.oiiamod.component.ModDataComponents;
 import net.razvan.oiiamod.item.ModCreativeModeTabs;
 import net.razvan.oiiamod.item.ModItems;
+import net.razvan.oiiamod.sound.ModSounds;
 import net.razvan.oiiamod.util.ModItemProperties;
 import org.slf4j.Logger;
 
@@ -46,6 +47,7 @@ public class Oiia {
         ModBlocks.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
+        ModSounds.register(modEventBus);
 
         ModDataComponents.register(modEventBus);
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us

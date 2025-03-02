@@ -14,6 +14,7 @@ import net.razvan.oiiamod.Oiia;
 import net.razvan.oiiamod.block.custom.MagicBlock;
 import net.razvan.oiiamod.block.custom.OiiaLampBlock;
 import net.razvan.oiiamod.item.ModItems;
+import net.razvan.oiiamod.sound.ModSounds;
 
 import javax.swing.*;
 import java.util.function.Supplier;
@@ -33,8 +34,8 @@ public class ModBlocks {
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
-            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).noLootTable()));
-
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).noLootTable().sound(ModSounds.MAGIC_BLOCK_SOUNDS)));
+                                    //MERGE SI CU SoundTypes
     public static final DeferredBlock<StairBlock> OIIA_STAIRS = registerBlock("oiia_stairs",
             () -> new StairBlock(ModBlocks.OIIAITE_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
