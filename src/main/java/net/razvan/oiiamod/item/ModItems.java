@@ -71,6 +71,8 @@ public class ModItems {
     public static final DeferredItem<Item> OIIAITE_HORSE_ARMOR = ITEMS.register("oiiaite_horse_armor",
         () ->  new AnimalArmorItem(ModArmorMaterials.OIIAITE_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
                 false, new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> COMPOUND_BOW = ITEMS.register("compound_bow",
+            () -> new BowItem(new Item.Properties().durability(690)));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

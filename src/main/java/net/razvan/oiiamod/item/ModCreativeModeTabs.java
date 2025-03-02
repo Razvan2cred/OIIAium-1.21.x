@@ -40,6 +40,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.OIIA_HOE);
 
                         output.accept(ModItems.OIIA_HAMMER);
+                        output.accept(ModItems.COMPOUND_BOW);
 
                         output.accept(ModItems.OIIAITE_HORSE_ARMOR);
                     }).build());
