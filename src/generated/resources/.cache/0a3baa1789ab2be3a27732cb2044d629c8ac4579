@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-02T23:20:33.8145434	Item Models: oiiamod
+// 1.21.1	2025-03-03T00:19:33.9530721	Item Models: oiiamod
 b11185618a0803dc94469bbf2cf367a73c07379d assets/oiiamod/models/item/cat_poop.json
 712cf7c9a0ae0f22f6d7149d993a8a762a1a7cb7 assets/oiiamod/models/item/dead_cat.json
 6128a5630fc195907e46fc29602cf155336d4379 assets/oiiamod/models/item/half_dead_cat.json
@@ -48,7 +48,6 @@ bbb90132bfb92408c85daf537035b74c812fbd91 assets/oiiamod/models/item/oiiaite_legg
 1e564d0aa5ab7dd24b186a7a4a9ac1563762dce2 assets/oiiamod/models/item/oiiaite_leggings_netherite_trim.json
 7bbbf08d60d846c12f5bf1db5907584e5ec38384 assets/oiiamod/models/item/oiiaite_leggings_quartz_trim.json
 ddc2dabcb3bec06dadcdfa9a6ad55483826f4638 assets/oiiamod/models/item/oiiaite_leggings_redstone_trim.json
-2230576dd42d3bde49a9a24553570ec62be8ad93 assets/oiiamod/models/item/oiiator.json
 dc5f96c86a8b38810ef65e13652ee98689d3379e assets/oiiamod/models/item/oiia_axe.json
 c00f2e5e1bc4e8281ff2709ffcebcbe2fae12c8e assets/oiiamod/models/item/oiia_button.json
 3d785ae63e71da9aef6a3bb04af07ad7cf008cda assets/oiiamod/models/item/oiia_door.json
