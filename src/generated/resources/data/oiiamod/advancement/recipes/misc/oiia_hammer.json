@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "oiiamod:oiia_fence_gate"
+        "recipe": "oiiamod:oiia_hammer"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "oiiamod:oiia_fence_gate"
+      "oiiamod:oiia_hammer"
     ]
   }
 }

@@ -33,6 +33,54 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('O', ModItems.OIIAITE.get())
                 .unlockedBy("has_oiiaite", has(ModItems.OIIAITE)).save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OIIA_HAMMER.get())
+                .pattern("OOO")
+                .pattern("OOO")
+                .pattern(" s ")
+                .define('O', ModItems.OIIAITE.get())
+                .define('s', Items.STICK)
+                .unlockedBy("has_oiiaite", has(ModItems.OIIAITE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OIIA_PICKAXE.get())
+                .pattern("OOO")
+                .pattern("OdO")
+                .pattern("OOO")
+                .define('O', ModItems.OIIAITE.get())
+                .define('d', Items.DIAMOND_PICKAXE)
+                .unlockedBy("has_oiiaite", has(ModItems.OIIAITE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OIIA_AXE.get())
+                .pattern("OOO")
+                .pattern("OdO")
+                .pattern("OOO")
+                .define('O', ModItems.OIIAITE.get())
+                .define('d', Items.DIAMOND_AXE)
+                .unlockedBy("has_oiiaite", has(ModItems.OIIAITE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OIIA_SWORD.get())
+                .pattern("OOO")
+                .pattern("OdO")
+                .pattern("OOO")
+                .define('O', ModItems.OIIAITE.get())
+                .define('d', Items.DIAMOND_SWORD)
+                .unlockedBy("has_oiiaite", has(ModItems.OIIAITE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OIIA_SHOVEL.get())
+                .pattern("OOO")
+                .pattern("OdO")
+                .pattern("OOO")
+                .define('O', ModItems.OIIAITE.get())
+                .define('d', Items.DIAMOND_SHOVEL)
+                .unlockedBy("has_oiiaite", has(ModItems.OIIAITE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OIIA_HOE.get())
+                .pattern("OOO")
+                .pattern("OdO")
+                .pattern("OOO")
+                .define('O', ModItems.OIIAITE.get())
+                .define('d', Items.DIAMOND_HOE)
+                .unlockedBy("has_oiiaite", has(ModItems.OIIAITE)).save(recipeOutput);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.OIIAITE.get(), 9)
                 .requires(ModBlocks.OIIAITE_BLOCK.get())
                 .unlockedBy("has_oiiaite_block", has(ModBlocks.OIIAITE_BLOCK)).save(recipeOutput);

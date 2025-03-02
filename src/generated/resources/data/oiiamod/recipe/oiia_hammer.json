@@ -1,21 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "oiiaite",
   "key": {
-    "#": {
-      "item": "minecraft:stick"
-    },
-    "W": {
+    "O": {
       "item": "oiiamod:oiiaite"
+    },
+    "s": {
+      "item": "minecraft:stick"
     }
   },
   "pattern": [
-    "W#W",
-    "W#W"
+    "OOO",
+    "OOO",
+    " s "
   ],
   "result": {
-    "count": 3,
-    "id": "oiiamod:oiia_fence"
+    "count": 1,
+    "id": "oiiamod:oiia_hammer"
   }
 }

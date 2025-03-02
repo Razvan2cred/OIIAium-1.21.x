@@ -7,6 +7,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.razvan.oiiamod.Oiia;
 import net.razvan.oiiamod.item.custom.FuelItem;
+import net.razvan.oiiamod.item.custom.HammerItem;
 import net.razvan.oiiamod.item.custom.OiiaItem;
 
 import java.util.List;
@@ -51,6 +52,9 @@ public class ModItems {
     public static final DeferredItem<HoeItem> OIIA_HOE = ITEMS.register("oiia_hoe",
             () -> new HoeItem(ModToolTiers.OIIAITE, new Item.Properties().fireResistant()
                     .attributes(HoeItem.createAttributes(ModToolTiers.OIIAITE, 20, -3.9f))));
+    public static final DeferredItem<HammerItem> OIIA_HAMMER = ITEMS.register("oiia_hammer",
+            () -> new HammerItem(ModToolTiers.OIIAITE, new Item.Properties().fireResistant()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.OIIAITE, 7f, -3.5f))));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

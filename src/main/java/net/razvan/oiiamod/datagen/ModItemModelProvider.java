@@ -40,6 +40,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.OIIA_AXE);
         handheldItem(ModItems.OIIA_SHOVEL);
         handheldItem(ModItems.OIIA_HOE);
+        handheldItem(ModItems.OIIA_HAMMER);
     }
     public void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
         this.withExistingParent(block.getId().getPath(), mcLoc("block/button_inventory"))
