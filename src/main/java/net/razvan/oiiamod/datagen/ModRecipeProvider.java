@@ -34,14 +34,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('O', ModItems.OIIAITE.get())
                 .unlockedBy("has_oiiaite", has(ModItems.OIIAITE)).save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OIIA_HAMMER.get())
-                .pattern("OOO")
-                .pattern("OOO")
-                .pattern(" s ")
-                .define('O', ModItems.OIIAITE.get())
-                .define('s', Items.STICK)
-                .unlockedBy("has_oiiaite", has(ModItems.OIIAITE)).save(recipeOutput);
-
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OIIA_PICKAXE.get())
                 .pattern("OOO")
                 .pattern("OdO")
@@ -84,15 +76,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OIIA_HAMMER.get())
                 .pattern("OOO")
-                .pattern("OoO")
+                .pattern("OpO")
                 .pattern("OOO")
                 .define('O', Items.DIAMOND_PICKAXE)
-                .define('o', ModItems.OIIA_PICKAXE.get())
+                .define('p', ModItems.OIIA_PICKAXE.get())
                 .unlockedBy("has_oiiaite", has(ModItems.OIIAITE)).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OIIAITE_HELMET.get())
                 .pattern("OOO")
                 .pattern("O O")
+                .pattern("   ")
                 .define('O', ModItems.OIIAITE.get())
                 .unlockedBy("has_oiiaite", has(ModItems.OIIAITE)).save(recipeOutput);
 
@@ -113,6 +106,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OIIAITE_BOOTS.get())
                 .pattern("O O")
                 .pattern("O O")
+                .pattern("   ")
                 .define('O', ModItems.OIIAITE.get())
                 .unlockedBy("has_oiiaite", has(ModItems.OIIAITE)).save(recipeOutput);
 

@@ -3,19 +3,16 @@
   "category": "misc",
   "key": {
     "O": {
-      "item": "minecraft:diamond_pickaxe"
-    },
-    "p": {
-      "item": "oiiamod:oiia_pickaxe"
+      "item": "oiiamod:oiiaite"
     }
   },
   "pattern": [
     "OOO",
-    "OpO",
-    "OOO"
+    "O O",
+    "   "
   ],
   "result": {
     "count": 1,
-    "id": "oiiamod:oiia_hammer"
+    "id": "oiiamod:oiiaite_helmet"
   }
 }
