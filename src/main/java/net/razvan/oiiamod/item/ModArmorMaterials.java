@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.function.Supplier;
 
 public class ModArmorMaterials { //shift x2 ArmorMaterials
-    public static final Holder<ArmorMaterial> OIIAITE_ARMOR_MATERIAL = register("oiiaite",
+    public static final Holder<ArmorMaterial> OIIAITE_ARMOR_MATERIAL = register("oiiaite", //fa-i uwuh in loc de item texture!!!
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
                 attribute.put(ArmorItem.Type.BOOTS, 5);
                 attribute.put(ArmorItem.Type.LEGGINGS, 7);

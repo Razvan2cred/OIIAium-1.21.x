@@ -1,8 +1,10 @@
 package net.razvan.oiiamod;
 
+import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.razvan.oiiamod.block.ModBlocks;
 import net.razvan.oiiamod.component.ModDataComponents;
+import net.razvan.oiiamod.effect.ModEffects;
 import net.razvan.oiiamod.item.ModCreativeModeTabs;
 import net.razvan.oiiamod.item.ModItems;
 import net.razvan.oiiamod.sound.ModSounds;
@@ -46,8 +48,11 @@ public class Oiia {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         // Register the item to a creative tab
+        ModEffects.register(modEventBus);
+
         modEventBus.addListener(this::addCreative);
         ModSounds.register(modEventBus);
+
 
         ModDataComponents.register(modEventBus);
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
