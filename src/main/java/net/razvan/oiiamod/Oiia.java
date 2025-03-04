@@ -7,6 +7,7 @@ import net.razvan.oiiamod.component.ModDataComponents;
 import net.razvan.oiiamod.effect.ModEffects;
 import net.razvan.oiiamod.item.ModCreativeModeTabs;
 import net.razvan.oiiamod.item.ModItems;
+import net.razvan.oiiamod.potion.ModPotions;
 import net.razvan.oiiamod.sound.ModSounds;
 import net.razvan.oiiamod.util.ModItemProperties;
 import org.slf4j.Logger;
@@ -52,6 +53,8 @@ public class Oiia {
 
         modEventBus.addListener(this::addCreative);
         ModSounds.register(modEventBus);
+
+        ModPotions.register(modEventBus);
 
 
         ModDataComponents.register(modEventBus);

@@ -5,13 +5,20 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.item.alchemy.PotionBrewing;
+import net.minecraft.world.item.alchemy.Potions;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.event.brewing.RegisterBrewingRecipesEvent;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.razvan.oiiamod.Oiia;
+import net.razvan.oiiamod.item.ModItems;
+import net.razvan.oiiamod.potion.ModPotions;
 
+@EventBusSubscriber(modid = Oiia.MOD_ID, bus = EventBusSubscriber.Bus.GAME)
 public class ModEffects {
     public static final DeferredRegister<MobEffect> MOB_EFFECTS =
             DeferredRegister.create(BuiltInRegistries.MOB_EFFECT, Oiia.MOD_ID);
@@ -28,4 +35,10 @@ public class ModEffects {
         MOB_EFFECTS.register(eventBus);
     }
 
+    @SubscribeEvent
+    public static void onBrewingRecipeRegister(RegisterBrewingRecipesEvent event){
+        PotionBrewing.Builder builder = event.getBuilder();
+
+        builder.addMix(Potions.WATER, ModItems.CAT_POOP.get(), ModPotions.GAY_POTION);
+    }
 }
