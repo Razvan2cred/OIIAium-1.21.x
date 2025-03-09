@@ -74,6 +74,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModItems.PEN.get());
         basicItem(ModItems.PEN_SEEDS.get());
+        basicItem(ModItems.SIGMA_BERRIES.get());
     }
     // Shoutout to El_Redstoniano for making this
     private void trimmedArmorItem(DeferredItem<ArmorItem> itemDeferredItem) {

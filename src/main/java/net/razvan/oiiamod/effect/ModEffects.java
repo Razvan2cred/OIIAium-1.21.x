@@ -36,8 +36,8 @@ public class ModEffects {
                     .addAttributeModifier(Attributes.ATTACK_KNOCKBACK,
                             ResourceLocation.fromNamespaceAndPath(Oiia.MOD_ID, "sigma"), 2.0f,
                             AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
-                    .addAttributeModifier(Attributes.BLOCK_BREAK_SPEED,
-                            ResourceLocation.fromNamespaceAndPath(Oiia.MOD_ID, "sigma"), 3.0f,
+                    .addAttributeModifier(Attributes.SAFE_FALL_DISTANCE,
+                            ResourceLocation.fromNamespaceAndPath(Oiia.MOD_ID, "sigma"), 300.0f,
                             AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
     public static void register(IEventBus eventBus){
         MOB_EFFECTS.register(eventBus);

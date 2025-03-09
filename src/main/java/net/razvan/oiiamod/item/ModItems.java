@@ -81,6 +81,8 @@ public class ModItems {
             () -> new ItemNameBlockItem(ModBlocks.PEN_CROP.get(), new Item.Properties()));
     public static final DeferredItem<Item> PEN = ITEMS.register("pen",
             () -> new ItemNameBlockItem(ModBlocks.PEN_CROP.get(), new Item.Properties().food(ModFoodProperties.PEN)));
+    public static final DeferredItem<Item> SIGMA_BERRIES = ITEMS.register("sigma_berries",
+            () -> new ItemNameBlockItem(ModBlocks.SIGMA_BERRY_BUSH.get(), new Item.Properties().food(ModFoodProperties.SIGMA_BERRIES)));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

@@ -14,6 +14,7 @@ import net.razvan.oiiamod.Oiia;
 import net.razvan.oiiamod.block.custom.MagicBlock;
 import net.razvan.oiiamod.block.custom.OiiaLampBlock;
 import net.razvan.oiiamod.block.custom.PenCrop;
+import net.razvan.oiiamod.block.custom.SigmaBushBlock;
 import net.razvan.oiiamod.item.ModItems;
 import net.razvan.oiiamod.sound.ModSounds;
 
@@ -69,6 +70,8 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> PEN_CROP = BLOCKS.register("pen_crop",
             () -> new PenCrop(BlockBehaviour.Properties.ofFullCopy(Blocks.BEETROOTS)));
+    public static final DeferredBlock<Block> SIGMA_BERRY_BUSH = BLOCKS.register("sigma_berry_bush",
+            () -> new SigmaBushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

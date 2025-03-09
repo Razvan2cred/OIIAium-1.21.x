@@ -29,6 +29,8 @@
   "item.oiiamod.pen_seeds": "The §cCastrator§r",
   "item.oiiamod.pen": "(§7Male§r) Penis",
 
+  "item.oiiamod.sigma_berries": "§cSigma Berries§r",
+
   "block.oiiamod.oiiaite_block": "Block of §8O§r§3I§r§eI§r§7A§r-ite",
   "block.oiiamod.oiiaite_ore": "§8O§r§3I§r§eI§r§7A§r-ite Ore",
   "block.oiiamod.oiiaite_deepslate_ore": "Deepslate §8O§r§3I§r§eI§r§7A§r-ite Ore",
@@ -69,6 +71,7 @@
   "painting.oiiamod.bora.author": "<3",
 
   "effect.oiiamod.gay": "§dG§r§bA§r§cY",
+  "effect.oiiamod.sigma": "§7Sigma",
 
   "enchantment.oiiamod.striker": "Call a Friend"
 }

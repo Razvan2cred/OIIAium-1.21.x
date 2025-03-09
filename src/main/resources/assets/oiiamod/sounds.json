@@ -35,6 +35,12 @@
       "oiiamod:magic_block_fall"
     ]
   },
+  "sigma": {
+    "subtitle": "sounds.oiiamod.sigma",
+    "sounds": [
+      "oiiamod:sigma"
+    ]
+  },
   "oiia_tech": {
     "sounds": [
       {

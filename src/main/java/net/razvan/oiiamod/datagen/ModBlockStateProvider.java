@@ -3,6 +3,7 @@ package net.razvan.oiiamod.datagen;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.CropBlock;
+import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
@@ -14,6 +15,7 @@ import net.razvan.oiiamod.Oiia;
 import net.razvan.oiiamod.block.ModBlocks;
 import net.razvan.oiiamod.block.custom.OiiaLampBlock;
 import net.razvan.oiiamod.block.custom.PenCrop;
+import net.razvan.oiiamod.block.custom.SigmaBushBlock;
 
 import java.util.function.Function;
 
@@ -51,8 +53,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
             blockItem(ModBlocks.OIIA_FENCE_GATE);
 
             makeCrop(((CropBlock) ModBlocks.PEN_CROP.get()), "pen_crop_stage", "pen_crop_stage");
+            makeBush(((SweetBerryBushBlock) ModBlocks.SIGMA_BERRY_BUSH.get()), "sigma_berry_bush_stage", "sigma_berry_bush_stage");
     }
+    public void makeBush(SweetBerryBushBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> states(state, modelName, textureName);
 
+        getVariantBuilder(block).forAllStates(function);
+    }
+    private ConfiguredModel[] states(BlockState state, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().cross(modelName + state.getValue(SigmaBushBlock.AGE),
+                ResourceLocation.fromNamespaceAndPath(Oiia.MOD_ID, "block/" + textureName + state.getValue(SigmaBushBlock.AGE))).renderType("cutout"));
+
+        return models;
+    }
     public void makeCrop(CropBlock block, String modelName, String textureName) {
         Function<BlockState, ConfiguredModel[]> function = state -> states(state, block, modelName, textureName);
 

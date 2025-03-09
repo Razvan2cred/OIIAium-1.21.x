@@ -48,6 +48,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.PEN_SEEDS);
                         output.accept(ModItems.PEN);
+
+                        output.accept(ModItems.SIGMA_BERRIES);
                     }).build());
     public static final Supplier<CreativeModeTab> OIIA_BLOCKS_TAB = CREATIVE_MODE_TAB.register("oiia_blocks_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.OIIAITE_BLOCK.get()))
