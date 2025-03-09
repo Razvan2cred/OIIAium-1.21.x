@@ -44,7 +44,7 @@ public class PenCrop extends CropBlock {
 
     @Override
     public int getMaxAge() {
-        return super.getMaxAge();
+        return MAX_AGE;
     }
 
     @Override
