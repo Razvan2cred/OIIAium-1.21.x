@@ -31,6 +31,14 @@ public class ModEffects {
                     .addAttributeModifier(Attributes.MAX_HEALTH,
                             ResourceLocation.fromNamespaceAndPath(Oiia.MOD_ID, "gay"), -0.5f,
                             AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+    public static final Holder<MobEffect> SIGMA_EFFECT = MOB_EFFECTS.register("sigma",
+            () -> new SigmaEffect(MobEffectCategory.NEUTRAL, 0xcc0000)
+                    .addAttributeModifier(Attributes.ATTACK_KNOCKBACK,
+                            ResourceLocation.fromNamespaceAndPath(Oiia.MOD_ID, "sigma"), 2.0f,
+                            AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
+                    .addAttributeModifier(Attributes.BLOCK_BREAK_SPEED,
+                            ResourceLocation.fromNamespaceAndPath(Oiia.MOD_ID, "sigma"), 3.0f,
+                            AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
     public static void register(IEventBus eventBus){
         MOB_EFFECTS.register(eventBus);
     }
