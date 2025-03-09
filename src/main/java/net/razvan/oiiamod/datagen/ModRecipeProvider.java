@@ -147,5 +147,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_oiiaite", has(ModItems.OIIAITE.get())).save(recipeOutput);
         trapdoorBuilder(ModBlocks.OIIA_TRAPDOOR.get(), Ingredient.of(ModItems.OIIAITE.get())).group("oiiaite")
                 .unlockedBy("has_oiiaite", has(ModItems.OIIAITE.get())).save(recipeOutput);
+
+        //carne care se degateste!!!
     }
 }

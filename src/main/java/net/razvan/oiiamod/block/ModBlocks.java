@@ -13,6 +13,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.razvan.oiiamod.Oiia;
 import net.razvan.oiiamod.block.custom.MagicBlock;
 import net.razvan.oiiamod.block.custom.OiiaLampBlock;
+import net.razvan.oiiamod.block.custom.PenCrop;
 import net.razvan.oiiamod.item.ModItems;
 import net.razvan.oiiamod.sound.ModSounds;
 
@@ -65,6 +66,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> OIIA_LAMP = registerBlock("oiia_lamp",
             () -> new OiiaLampBlock(BlockBehaviour.Properties.of().strength(2f)
                     .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(OiiaLampBlock.CLICKED) ? 15:0)));
+
+    public static final DeferredBlock<Block> PEN_CROP = BLOCKS.register("pen_crop",
+            () -> new PenCrop(BlockBehaviour.Properties.ofFullCopy(Blocks.BEETROOTS)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

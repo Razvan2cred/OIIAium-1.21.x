@@ -45,6 +45,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.OIIA_TECH_MUSIC_DISC);
 
                         output.accept(ModItems.OIIAITE_HORSE_ARMOR);
+
+                        output.accept(ModItems.PEN_SEEDS);
+                        output.accept(ModItems.PEN);
                     }).build());
     public static final Supplier<CreativeModeTab> OIIA_BLOCKS_TAB = CREATIVE_MODE_TAB.register("oiia_blocks_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.OIIAITE_BLOCK.get()))

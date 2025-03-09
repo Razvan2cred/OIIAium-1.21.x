@@ -5,6 +5,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.razvan.oiiamod.block.ModBlocks;
 import net.razvan.oiiamod.component.ModDataComponents;
 import net.razvan.oiiamod.effect.ModEffects;
+import net.razvan.oiiamod.enchantment.ModEnchantmentEffects;
 import net.razvan.oiiamod.item.ModCreativeModeTabs;
 import net.razvan.oiiamod.item.ModItems;
 import net.razvan.oiiamod.potion.ModPotions;
@@ -55,6 +56,8 @@ public class Oiia {
         ModSounds.register(modEventBus);
 
         ModPotions.register(modEventBus);
+
+        ModEnchantmentEffects.register(modEventBus);
 
 
         ModDataComponents.register(modEventBus);

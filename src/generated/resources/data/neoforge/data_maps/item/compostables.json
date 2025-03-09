@@ -1,0 +1,10 @@
+{
+  "values": {
+    "oiiamod:pen": {
+      "chance": 0.69
+    },
+    "oiiamod:pen_seeds": {
+      "chance": 0.25
+    }
+  }
+}

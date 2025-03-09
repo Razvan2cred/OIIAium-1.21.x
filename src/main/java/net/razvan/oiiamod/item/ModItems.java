@@ -6,6 +6,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.razvan.oiiamod.Oiia;
+import net.razvan.oiiamod.block.ModBlocks;
 import net.razvan.oiiamod.item.custom.FuelItem;
 import net.razvan.oiiamod.item.custom.HammerItem;
 import net.razvan.oiiamod.item.custom.ModArmorItem;
@@ -76,6 +77,10 @@ public class ModItems {
             () -> new BowItem(new Item.Properties().durability(690)));
     public static final DeferredItem<Item> OIIA_TECH_MUSIC_DISC = ITEMS.register("oiia_tech_music_disc",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.OIIA_TECH_KEY).stacksTo(1).fireResistant()));
+    public static final DeferredItem<Item> PEN_SEEDS = ITEMS.register("pen_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.PEN_CROP.get(), new Item.Properties()));
+    public static final DeferredItem<Item> PEN = ITEMS.register("pen",
+            () -> new ItemNameBlockItem(ModBlocks.PEN_CROP.get(), new Item.Properties().food(ModFoodProperties.PEN)));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

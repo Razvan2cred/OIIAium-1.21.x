@@ -26,6 +26,9 @@
   "item.oiiamod.oiia_tech_music_disc": "§8O§r§3I§r§eI§r§7A§r",
   "item.oiiamod.oiia_tech_music_disc.desc": "§8O§r§3I§r§eI§r§7A§r§8I§r§3O§r§eU§r§7I§r§8I§r§3I§r§eA§r§8O§r§3I§r§eI§r§7A§r§8I§r§3O§r§eU§r§7I§r§8I§r§3I§r§eA§r§8O§r§3I§r§eI§r§7A§r§8I§r§3O§r§eU§r§7I§r§8I§r§3I§r§eA§r§8O§r§3I§r§eI§r§7A§r§8I§r§3O§r§eU§r§7I§r§8I§r§3I§r§eA§r§8O§r§3I§r§eI§r§7A§r§8I§r§3O§r§eU§r§7I§r§8I§r§3I§r§eA§r",
 
+  "item.oiiamod.pen_seeds": "The §cCastrator§r",
+  "item.oiiamod.pen": "(§7Male§r) Penis",
+
   "block.oiiamod.oiiaite_block": "Block of §8O§r§3I§r§eI§r§7A§r-ite",
   "block.oiiamod.oiiaite_ore": "§8O§r§3I§r§eI§r§7A§r-ite Ore",
   "block.oiiamod.oiiaite_deepslate_ore": "Deepslate §8O§r§3I§r§eI§r§7A§r-ite Ore",
@@ -46,7 +49,6 @@
 
   "block.oiiamod.oiia_lamp": "§8O§r§3I§r§eI§r§7A§r Lamp",
 
-
   "creativetab.oiiamod.oiia_items": "§8O§r§3I§r§eI§r§7A§r-ite Items",
   "creativetab.oiiamod.oiia_blocks": "§8O§r§3I§r§eI§r§7A§r-ite Blocks",
 
@@ -66,5 +68,7 @@
   "painting.oiiamod.bora.title": "Bora",
   "painting.oiiamod.bora.author": "<3",
 
-  "effect.oiiamod.gay": "§dG§r§bA§r§cY"
+  "effect.oiiamod.gay": "§dG§r§bA§r§cY",
+
+  "enchantment.oiiamod.striker": "Call a Friend"
 }
