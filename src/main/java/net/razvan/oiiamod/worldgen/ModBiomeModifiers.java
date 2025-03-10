@@ -17,6 +17,8 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_OIIAITE_ORE = registerKey("add_oiiaite_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_OIIAITE_ORE = registerKey("add_nether_oiiaite_ore");
     public static final ResourceKey<BiomeModifier> ADD_END_OIIAITE_ORE = registerKey("add_end_oiiaite_ore");
+    public static final ResourceKey<BiomeModifier> ADD_TREE_TECHWOOD = registerKey("add_tree_techwood");
+
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
         // CF -> PF -> BM
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -40,6 +42,11 @@ public class ModBiomeModifiers {
                 biomes.getOrThrow(BiomeTags.IS_END),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.END_OIIAITE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_TREE_TECHWOOD, new BiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(Biomes.PLAINS), biomes.getOrThrow(Biomes.SNOWY_PLAINS)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.TECHWOOD_PLACED_KEY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
 
     }
     private static ResourceKey<BiomeModifier> registerKey(String name) {

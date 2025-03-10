@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "minecraft:plains",
+    "minecraft:snowy_plains"
+  ],
+  "features": "oiiamod:techwood_placed",
+  "step": "vegetal_decoration"
+}
