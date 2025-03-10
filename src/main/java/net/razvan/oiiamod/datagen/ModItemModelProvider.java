@@ -77,6 +77,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.SIGMA_BERRIES.get());
 
         saplingItem(ModBlocks.TECHWOOD_SAPLING);
+
+        withExistingParent(ModItems.OIIA_CAT_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
     private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {
         return withExistingParent(item.getId().getPath(),

@@ -3,10 +3,12 @@ package net.razvan.oiiamod.item;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.razvan.oiiamod.Oiia;
 import net.razvan.oiiamod.block.ModBlocks;
+import net.razvan.oiiamod.entity.ModEntities;
 import net.razvan.oiiamod.item.custom.FuelItem;
 import net.razvan.oiiamod.item.custom.HammerItem;
 import net.razvan.oiiamod.item.custom.ModArmorItem;
@@ -83,6 +85,9 @@ public class ModItems {
             () -> new ItemNameBlockItem(ModBlocks.PEN_CROP.get(), new Item.Properties().food(ModFoodProperties.PEN)));
     public static final DeferredItem<Item> SIGMA_BERRIES = ITEMS.register("sigma_berries",
             () -> new ItemNameBlockItem(ModBlocks.SIGMA_BERRY_BUSH.get(), new Item.Properties().food(ModFoodProperties.SIGMA_BERRIES)));
+    public static final DeferredItem<Item> OIIA_CAT_SPAWN_EGG = ITEMS.register("oiia_cat_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.OIIA_CAT, 0x241408, 0x362214,
+                    new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

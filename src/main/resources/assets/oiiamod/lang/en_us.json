@@ -31,6 +31,8 @@
 
   "item.oiiamod.sigma_berries": "§cSigma Berries§r",
 
+  "item.oiiamod.oiia_cat_spawn_egg": "Oiia Cat Spawn Egg",
+
   "block.oiiamod.oiiaite_block": "Block of §8O§r§3I§r§eI§r§7A§r-ite",
 
   "block.oiiamod.oiiaite_ore": "§8O§r§3I§r§eI§r§7A§r-ite Ore",
@@ -85,5 +87,7 @@
   "effect.oiiamod.gay": "§dG§r§bA§r§cY",
   "effect.oiiamod.sigma": "§7Sigma",
 
-  "enchantment.oiiamod.striker": "Call a Friend"
+  "enchantment.oiiamod.striker": "Call a Friend",
+
+  "entity.mccourse.oiiacat": "Oiia Cat"
 }

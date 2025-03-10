@@ -1,11 +1,14 @@
 package net.razvan.oiiamod;
 
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.razvan.oiiamod.block.ModBlocks;
 import net.razvan.oiiamod.component.ModDataComponents;
 import net.razvan.oiiamod.effect.ModEffects;
 import net.razvan.oiiamod.enchantment.ModEnchantmentEffects;
+import net.razvan.oiiamod.entity.ModEntities;
+import net.razvan.oiiamod.entity.client.OiiaCatRenderer;
 import net.razvan.oiiamod.item.ModCreativeModeTabs;
 import net.razvan.oiiamod.item.ModItems;
 import net.razvan.oiiamod.potion.ModPotions;
@@ -59,6 +62,7 @@ public class Oiia {
 
         ModEnchantmentEffects.register(modEventBus);
 
+        ModEntities.register(modEventBus);
 
         ModDataComponents.register(modEventBus);
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
@@ -97,9 +101,10 @@ public class Oiia {
     public static class ClientModEvents
     {
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
+        public static void onClientSetup(FMLClientSetupEvent event) {
             ModItemProperties.addCustomItemProperties();
+
+            EntityRenderers.register(ModEntities.OIIA_CAT.get(), OiiaCatRenderer::new);
         }
     }
 }
