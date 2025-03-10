@@ -32,8 +32,11 @@
   "item.oiiamod.sigma_berries": "§cSigma Berries§r",
 
   "block.oiiamod.oiiaite_block": "Block of §8O§r§3I§r§eI§r§7A§r-ite",
+
   "block.oiiamod.oiiaite_ore": "§8O§r§3I§r§eI§r§7A§r-ite Ore",
-  "block.oiiamod.oiiaite_deepslate_ore": "Deepslate §8O§r§3I§r§eI§r§7A§r-ite Ore",
+  "block.oiiamod.oiiaite_deepslate_ore": "Deepslate §8O§r§3I§r§eI§r§7A§r-ite Deepslate Ore",
+  "block.oiiamod.oiiaite_end_ore": "§8O§r§3I§r§eI§r§7A§r-ite End Ore",
+  "block.oiiamod.oiiaite_nether_ore": "Deepslate §8O§r§3I§r§eI§r§7A§r-ite Nether Ore",
   "block.oiiamod.magic_block": "Magic Block?",
 
   "block.oiiamod.oiia_stairs": "§8O§r§3I§r§eI§r§7A§r Stairs",

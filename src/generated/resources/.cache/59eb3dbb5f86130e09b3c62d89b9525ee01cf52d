@@ -1,6 +1,8 @@
-// 1.21.1	2025-03-10T00:13:24.2763654	Loot Tables
+// 1.21.1	2025-03-10T15:54:28.5130053	Loot Tables
 a9861f671a5de4b5830aa8ed5b23bd0bd6ca5168 data/oiiamod/loot_table/blocks/oiiaite_block.json
 3ad3b175e79315c376015afd1e5da1c10dab1c06 data/oiiamod/loot_table/blocks/oiiaite_deepslate_ore.json
+2735e38565999320ef8211591a7a9e628d28d727 data/oiiamod/loot_table/blocks/oiiaite_end_ore.json
+8b5422e77978d5ba6a3258e226ed216f7ed1c47c data/oiiamod/loot_table/blocks/oiiaite_nether_ore.json
 e704aa1925cb241df8533ad504f90640075815d6 data/oiiamod/loot_table/blocks/oiiaite_ore.json
 109b757ee4d75ca59d03d04f4727c3cbeefce256 data/oiiamod/loot_table/blocks/oiia_button.json
 fc67da84336cbcadeb345033bbaf22b460fa4971 data/oiiamod/loot_table/blocks/oiia_door.json

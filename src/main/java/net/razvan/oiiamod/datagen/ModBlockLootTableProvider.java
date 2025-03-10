@@ -40,6 +40,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.OIIAITE_ORE.get(), ModItems.RAW_OIIAITE.get()));
         add(ModBlocks.OIIAITE_DEEPSLATE_ORE.get(),
             block -> createMultipleOreDrops(ModBlocks.OIIAITE_DEEPSLATE_ORE.get(), ModItems.RAW_OIIAITE.get(),2,3));
+        add(ModBlocks.OIIAITE_END_ORE.get(),
+            block -> createMultipleOreDrops(ModBlocks.OIIAITE_END_ORE.get(), ModItems.RAW_OIIAITE.get(),3,6));
+        add(ModBlocks.OIIAITE_NETHER_ORE.get(),
+            block -> createMultipleOreDrops(ModBlocks.OIIAITE_NETHER_ORE.get(), ModItems.RAW_OIIAITE.get(),4,8));
 
         dropSelf(ModBlocks.OIIA_STAIRS.get());
         add(ModBlocks.OIIA_SLAB.get(),

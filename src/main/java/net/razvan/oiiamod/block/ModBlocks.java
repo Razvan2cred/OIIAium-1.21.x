@@ -34,6 +34,12 @@ public class ModBlocks {
     public static final DeferredBlock<Block> OIIAITE_DEEPSLATE_ORE = registerBlock("oiiaite_deepslate_ore",
             () -> new DropExperienceBlock(UniformInt.of(2,4),
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> OIIAITE_END_ORE = registerBlock("oiiaite_end_ore",
+            () -> new DropExperienceBlock(UniformInt.of(5,9),
+                    BlockBehaviour.Properties.of().strength(7f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> OIIAITE_NETHER_ORE = registerBlock("oiiaite_nether_ore",
+            () -> new DropExperienceBlock(UniformInt.of(1,5),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
             () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).noLootTable().sound(ModSounds.MAGIC_BLOCK_SOUNDS)));

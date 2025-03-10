@@ -32,6 +32,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
             blockWithItem(ModBlocks.OIIAITE_DEEPSLATE_ORE);
             blockWithItem(ModBlocks.OIIAITE_ORE);
+            blockWithItem(ModBlocks.OIIAITE_END_ORE);
+            blockWithItem(ModBlocks.OIIAITE_NETHER_ORE);
 
             stairsBlock(ModBlocks.OIIA_STAIRS.get(), blockTexture(ModBlocks.OIIAITE_BLOCK.get()));
             slabBlock(ModBlocks.OIIA_SLAB.get(), blockTexture(ModBlocks.OIIAITE_BLOCK.get()), blockTexture(ModBlocks.OIIAITE_BLOCK.get()));

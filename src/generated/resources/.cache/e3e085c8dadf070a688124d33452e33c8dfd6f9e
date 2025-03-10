@@ -1,7 +1,9 @@
-// 1.21.1	2025-03-10T00:13:24.2793642	Block States: oiiamod
+// 1.21.1	2025-03-10T15:54:28.5150066	Block States: oiiamod
 0b11f3fb6a0fdd0efa4af37720672da29f759777 assets/oiiamod/blockstates/magic_block.json
 b9f2a1fd55119fac4b662cce25dd4fce18fa61e2 assets/oiiamod/blockstates/oiiaite_block.json
 414addf85ed56e41a857900cc4ad5b8c15729a60 assets/oiiamod/blockstates/oiiaite_deepslate_ore.json
+e383c9fde39c7aac183723a3ad9a4fc66c7b856f assets/oiiamod/blockstates/oiiaite_end_ore.json
+fb33e188b316c043d08277e3e54ff8da4f1e6e3c assets/oiiamod/blockstates/oiiaite_nether_ore.json
 e14e48acdb50e5cad441f5ad58e666c61fddb319 assets/oiiamod/blockstates/oiiaite_ore.json
 44a1f2811de619a90e7a8b13e832ec2b462e9595 assets/oiiamod/blockstates/oiia_button.json
 79e2aad56172c12758aee0196e081f58244ab452 assets/oiiamod/blockstates/oiia_door.json
@@ -17,6 +19,8 @@ ebe0391cdc8727a4ab2ad8f484a087255687eeb5 assets/oiiamod/blockstates/sigma_berry_
 daca0d0e48141eaf2bbaae26ea8a9ac1227d0a7b assets/oiiamod/models/block/magic_block.json
 096f947899a2becaaf91915c69302320f4d31e3f assets/oiiamod/models/block/oiiaite_block.json
 54d44bec98c1b39dd565d541d300cb46c9c8111b assets/oiiamod/models/block/oiiaite_deepslate_ore.json
+38edc51413b8f006094c31c52032f05707fd9419 assets/oiiamod/models/block/oiiaite_end_ore.json
+3250f87773a2c06081e79276fad949e52e1f267d assets/oiiamod/models/block/oiiaite_nether_ore.json
 69d28827d2ff6fe052276e9d0a6a35f3d1eb36db assets/oiiamod/models/block/oiiaite_ore.json
 e2b588f4fe4213e21572574659a0768de7624fb4 assets/oiiamod/models/block/oiia_button.json
 4fbfa8b7c952e4c6fff85d3e8d467046cc3c6cf9 assets/oiiamod/models/block/oiia_button_pressed.json
@@ -58,6 +62,8 @@ c7428a8c124000b48c081329c918a176bfed65b8 assets/oiiamod/models/block/sigma_berry
 2906eb5cda73f506e5be0a46e130f0c18eb2124b assets/oiiamod/models/item/magic_block.json
 659e426bd4ad5ec6ae5f4f99389dacb49d004cf8 assets/oiiamod/models/item/oiiaite_block.json
 d291a2329ccc9535bfb1f6009d4e06f45794e7dd assets/oiiamod/models/item/oiiaite_deepslate_ore.json
+3b4026f1793c9bb80cd3b2d570cd2eebebaab66d assets/oiiamod/models/item/oiiaite_end_ore.json
+5163ecb361748aa8f8222395507cf85dafda67eb assets/oiiamod/models/item/oiiaite_nether_ore.json
 dd9f69e42491a3e92fe837d4f9564926122c353b assets/oiiamod/models/item/oiiaite_ore.json
 86a120ca8c6cba2edd0dc975c9f04db7087df7cf assets/oiiamod/models/item/oiia_fence_gate.json
 ef7ea660dc287eeac39791cd947670fe5b67fd82 assets/oiiamod/models/item/oiia_pressure_plate.json
