@@ -123,7 +123,7 @@ public class ModBlocks {
             });
 
     public static final DeferredBlock<Block> TECHWOOD_SAPLING = registerBlock("techwood_sapling",
-            () -> new SaplingBlock(ModTreeGrowers.TECHWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+            () -> new ModSaplingBlock(ModTreeGrowers.TECHWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING), () -> Blocks.GRASS_BLOCK));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

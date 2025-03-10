@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-10T17:59:34.2194213	Registries
+// 1.21.1	2025-03-10T18:09:12.3628043	Registries
 2b2ed3995720663fc54496eb0d68198aa5904b10 data/oiiamod/enchantment/striker.json
 acda2510d10c99e7b6d2b08bb3e1d3bf41f079b3 data/oiiamod/neoforge/biome_modifier/add_end_oiiaite_ore.json
 8e7cb18bb9f9f22d7ca2a44bc84931232f13158b data/oiiamod/neoforge/biome_modifier/add_nether_oiiaite_ore.json
@@ -7,7 +7,7 @@ acda2510d10c99e7b6d2b08bb3e1d3bf41f079b3 data/oiiamod/neoforge/biome_modifier/ad
 d9a478b42ca04fe935e24ca6315a167aa429245b data/oiiamod/worldgen/configured_feature/end_oiiaite_ore.json
 53590be6d13ccf61d28dc583f53f14c58c1c0a4f data/oiiamod/worldgen/configured_feature/nether_oiiaite_ore.json
 8c0da6f835a81aa031465f9119d13083f19f429d data/oiiamod/worldgen/configured_feature/oiiaite_ore.json
-227246011ca5fafb7df77ca820935c01fe0d3081 data/oiiamod/worldgen/configured_feature/techwood.json
+f3f94abc4b1dd68ed730470724a4688220b56724 data/oiiamod/worldgen/configured_feature/techwood.json
 9ce96b81e981d795d14e33b43806ae3735d12aca data/oiiamod/worldgen/placed_feature/end_oiiaite_ore_placed.json
 45123a268e2e696d723584898d41e22906196af0 data/oiiamod/worldgen/placed_feature/nether_oiiaite_ore_placed.json
 4d13c48f76cf34bbe4951093398bf0e0041c5e8f data/oiiamod/worldgen/placed_feature/oiiaite_ore_placed.json
