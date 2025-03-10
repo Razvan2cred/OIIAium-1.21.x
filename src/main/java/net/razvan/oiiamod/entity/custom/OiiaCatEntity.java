@@ -1,6 +1,9 @@
 package net.razvan.oiiamod.entity.custom;
 
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.AnimationState;
 import net.minecraft.world.entity.EntityType;
@@ -13,6 +16,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.razvan.oiiamod.entity.ModEntities;
 import net.razvan.oiiamod.item.ModItems;
+import net.razvan.oiiamod.sound.ModSounds;
 import org.jetbrains.annotations.Nullable;
 
 public class OiiaCatEntity extends Animal {
@@ -72,5 +76,23 @@ public class OiiaCatEntity extends Animal {
         if(this.level().isClientSide()) {
             this.setupAnimationStates();
         }
+    }
+
+    @Nullable
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return ModSounds.MAGIC_BLOCK_BREAK.get();
+    }
+
+    @Nullable
+    @Override
+    protected SoundEvent getHurtSound(DamageSource damageSource) {
+        return ModSounds.MAGIC_BLOCK_STEP.get();
+    }
+
+    @Nullable
+    @Override
+    protected SoundEvent getDeathSound() {
+        return SoundEvents.ENDER_DRAGON_DEATH;
     }
 }
