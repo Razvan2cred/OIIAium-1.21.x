@@ -127,6 +127,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.OIIAITE.get())
                 .unlockedBy("has_oiiaite", has(ModItems.OIIAITE)).save(recipeOutput);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.OIIA_CAT_SPAWN_EGG.get())
+                .requires(Items.EGG)
+                .requires(ModItems.OIIAITE.get())
+                .unlockedBy("has_oiiaite", has(ModItems.OIIAITE)).save(recipeOutput);
+
         oreSmelting(recipeOutput, OIIAITE_SMELTABLES, RecipeCategory.MISC, ModItems.OIIAITE.get(), 4f, 200, "oiiaite");
         oreBlasting(recipeOutput, OIIAITE_SMELTABLES, RecipeCategory.MISC, ModItems.OIIAITE.get(), 4f, 100, "oiiaite");
 
