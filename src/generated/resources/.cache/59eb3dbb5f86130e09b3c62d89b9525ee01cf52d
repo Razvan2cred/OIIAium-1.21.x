@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-10T15:54:28.5130053	Loot Tables
+// 1.21.1	2025-03-10T17:25:31.2732031	Loot Tables
 a9861f671a5de4b5830aa8ed5b23bd0bd6ca5168 data/oiiamod/loot_table/blocks/oiiaite_block.json
 3ad3b175e79315c376015afd1e5da1c10dab1c06 data/oiiamod/loot_table/blocks/oiiaite_deepslate_ore.json
 2735e38565999320ef8211591a7a9e628d28d727 data/oiiamod/loot_table/blocks/oiiaite_end_ore.json
@@ -16,3 +16,10 @@ f18548922a83411b2fea8a05023b8ed28495914e data/oiiamod/loot_table/blocks/oiia_sla
 c484cd820e6a97b2f05ebb96511ddf5a5d456180 data/oiiamod/loot_table/blocks/oiia_wall.json
 3bc037e8c887c17e145c4271c959f593a4baf272 data/oiiamod/loot_table/blocks/pen_crop.json
 0306bd81e577cfa0db901f67d874c94f67f3006f data/oiiamod/loot_table/blocks/sigma_berry_bush.json
+73ca374d00e2e0b541dd42e8b95e6997d37734ed data/oiiamod/loot_table/blocks/stripped_techwood_log.json
+66843a8eb52b53b398628f55394b72e0aa9977fc data/oiiamod/loot_table/blocks/stripped_techwood_wood.json
+1d9af14098af29ff1fb2e64035b01fd93f1ed9e1 data/oiiamod/loot_table/blocks/techwood_leaves.json
+1cd6f034164bbefe158d4aa9eb41e365b39252e2 data/oiiamod/loot_table/blocks/techwood_log.json
+228c1b02e8641a85b3214099bef5eb0ddf5b4b6b data/oiiamod/loot_table/blocks/techwood_planks.json
+008680afb2c280163c8def5e25dda503b0418376 data/oiiamod/loot_table/blocks/techwood_sapling.json
+a893740d46aef09c691c2ee5540a9bc4e2d0cd4f data/oiiamod/loot_table/blocks/techwood_wood.json

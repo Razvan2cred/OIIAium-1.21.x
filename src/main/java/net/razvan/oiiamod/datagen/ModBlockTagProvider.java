@@ -40,5 +40,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
                 .remove(ModTags.Blocks.NEEDS_OIIA_TOOL);
 
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.TECHWOOD_LOG.get())
+                .add(ModBlocks.TECHWOOD_WOOD.get())
+                .add(ModBlocks.STRIPPED_TECHWOOD_LOG.get())
+                .add(ModBlocks.STRIPPED_TECHWOOD_WOOD.get());
     }
 }

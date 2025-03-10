@@ -3,12 +3,14 @@ package net.razvan.oiiamod.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.razvan.oiiamod.Oiia;
+import net.razvan.oiiamod.block.ModBlocks;
 import net.razvan.oiiamod.item.ModItems;
 import net.razvan.oiiamod.util.ModTags;
 import org.jetbrains.annotations.Nullable;
@@ -44,5 +46,14 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.OIIAITE_CHESTPLATE.get())
                 .add(ModItems.OIIAITE_LEGGINGS.get())
                 .add(ModItems.OIIAITE_BOOTS.get());
+
+        this.tag(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.TECHWOOD_LOG.get().asItem())
+                .add(ModBlocks.TECHWOOD_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_TECHWOOD_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_TECHWOOD_WOOD.get().asItem());
+
+        this.tag(ItemTags.PLANKS)
+                .add(ModBlocks.TECHWOOD_PLANKS.asItem());
     }
 }

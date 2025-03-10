@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "oiiamod:block/techwood_log",
+    "side": "oiiamod:block/stripped_techwood_log"
+  }
+}

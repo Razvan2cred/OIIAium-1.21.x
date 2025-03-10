@@ -1,8 +1,11 @@
 package net.razvan.oiiamod.datagen;
 
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.fml.common.Mod;
@@ -56,7 +59,35 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
             makeCrop(((CropBlock) ModBlocks.PEN_CROP.get()), "pen_crop_stage", "pen_crop_stage");
             makeBush(((SweetBerryBushBlock) ModBlocks.SIGMA_BERRY_BUSH.get()), "sigma_berry_bush_stage", "sigma_berry_bush_stage");
+
+            logBlock((RotatedPillarBlock) ModBlocks.TECHWOOD_LOG.get());
+            axisBlock(((RotatedPillarBlock) ModBlocks.TECHWOOD_WOOD.get()), blockTexture(ModBlocks.TECHWOOD_LOG.get()), blockTexture(ModBlocks.TECHWOOD_LOG.get()));
+
+            logBlock((RotatedPillarBlock) ModBlocks.STRIPPED_TECHWOOD_LOG.get());
+            axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_TECHWOOD_WOOD.get()), blockTexture(ModBlocks.STRIPPED_TECHWOOD_LOG.get()), blockTexture(ModBlocks.TECHWOOD_LOG.get()));
+
+            blockItem(ModBlocks.TECHWOOD_LOG);
+            blockItem(ModBlocks.TECHWOOD_WOOD);
+            blockItem(ModBlocks.STRIPPED_TECHWOOD_LOG);
+            blockItem(ModBlocks.STRIPPED_TECHWOOD_WOOD);
+
+            blockWithItem(ModBlocks.TECHWOOD_PLANKS);
+
+            leavesBlock(ModBlocks.TECHWOOD_LEAVES);
+            saplingBlock(ModBlocks.TECHWOOD_SAPLING);
     }
+
+    private void saplingBlock(DeferredBlock<Block> blockRegistryObject) {
+        simpleBlock(blockRegistryObject.get(),
+                models().cross(BuiltInRegistries.BLOCK.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
+
+    private void leavesBlock(DeferredBlock<Block> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(),
+                models().singleTexture(BuiltInRegistries.BLOCK.getKey(blockRegistryObject.get()).getPath(), ResourceLocation.parse("minecraft:block/leaves"),
+                        "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
+
     public void makeBush(SweetBerryBushBlock block, String modelName, String textureName) {
         Function<BlockState, ConfiguredModel[]> function = state -> states(state, modelName, textureName);
 

@@ -85,6 +85,16 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                                 .apply(ApplyBonusCount.addUniformBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE)))
                 )));
 
+        this.dropSelf(ModBlocks.TECHWOOD_LOG.get());
+        this.dropSelf(ModBlocks.TECHWOOD_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_TECHWOOD_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_TECHWOOD_WOOD.get());
+        this.dropSelf(ModBlocks.TECHWOOD_PLANKS.get());
+        this.dropSelf(ModBlocks.TECHWOOD_SAPLING.get());
+
+        this.add(ModBlocks.TECHWOOD_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.TECHWOOD_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
     }
 
 

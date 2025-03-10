@@ -76,6 +76,16 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.OIIA_WALL);
 
                         output.accept(ModBlocks.OIIA_LAMP);
+
+                        output.accept(ModBlocks.TECHWOOD_LOG);
+                        output.accept(ModBlocks.TECHWOOD_WOOD);
+                        output.accept(ModBlocks.STRIPPED_TECHWOOD_LOG);
+                        output.accept(ModBlocks.STRIPPED_TECHWOOD_WOOD);
+
+                        output.accept(ModBlocks.TECHWOOD_PLANKS);
+                        output.accept(ModBlocks.TECHWOOD_SAPLING);
+
+                        output.accept(ModBlocks.TECHWOOD_LEAVES);
                     }).build());
     public static void register(IEventBus eventBus){
         CREATIVE_MODE_TAB.register(eventBus);

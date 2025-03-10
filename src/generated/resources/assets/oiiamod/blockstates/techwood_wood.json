@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "oiiamod:block/techwood_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "oiiamod:block/techwood_wood"
+    },
+    "axis=z": {
+      "model": "oiiamod:block/techwood_wood_horizontal",
+      "x": 90
+    }
+  }
+}

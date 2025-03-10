@@ -1,6 +1,7 @@
-// 1.21.1	2025-03-02T19:23:56.0241034	Tags for minecraft:block mod id oiiamod
+// 1.21.1	2025-03-10T17:25:31.2712021	Tags for minecraft:block mod id oiiamod
 850a8f77a351cf26b33f2326449b54392e180854 data/minecraft/tags/block/fences.json
 5f819575f68109fc31988021020318c64ae4ae50 data/minecraft/tags/block/fence_gates.json
+c56e568eedc516c2f60bb15df5ccb5efce0e8039 data/minecraft/tags/block/logs_that_burn.json
 63f600d73da361137b02cde99ba9dd9877809168 data/minecraft/tags/block/mineable/pickaxe.json
 3e55143fa186ee617711cec89571db6fa0ce9388 data/minecraft/tags/block/needs_diamond_tool.json
 0dfb6e952914039401dca359e9b524c5bd9e8669 data/minecraft/tags/block/walls.json
