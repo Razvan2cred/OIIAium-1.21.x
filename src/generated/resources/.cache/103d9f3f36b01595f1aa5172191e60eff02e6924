@@ -1,10 +1,11 @@
-// 1.21.1	2025-03-10T18:23:03.4131584	Registries
+// 1.21.1	2025-03-10T23:59:38.0352867	Registries
 2b2ed3995720663fc54496eb0d68198aa5904b10 data/oiiamod/enchantment/striker.json
 acda2510d10c99e7b6d2b08bb3e1d3bf41f079b3 data/oiiamod/neoforge/biome_modifier/add_end_oiiaite_ore.json
 8e7cb18bb9f9f22d7ca2a44bc84931232f13158b data/oiiamod/neoforge/biome_modifier/add_nether_oiiaite_ore.json
 1cc231faee1f038f3083a167d03b761885980eba data/oiiamod/neoforge/biome_modifier/add_oiiaite_ore.json
 a3562d3a09bd6b6785b88a83754d2848b3ecaff6 data/oiiamod/neoforge/biome_modifier/add_sigma_berry_bush.json
 4fe3616723623b7046e8fcd339c2fe0f1e3c4459 data/oiiamod/neoforge/biome_modifier/add_tree_techwood.json
+a9caf0f0862ced6723be880b72f6da8b19f5c338 data/oiiamod/neoforge/biome_modifier/spawn_oiia_cat.json
 d9a478b42ca04fe935e24ca6315a167aa429245b data/oiiamod/worldgen/configured_feature/end_oiiaite_ore.json
 53590be6d13ccf61d28dc583f53f14c58c1c0a4f data/oiiamod/worldgen/configured_feature/nether_oiiaite_ore.json
 8c0da6f835a81aa031465f9119d13083f19f429d data/oiiamod/worldgen/configured_feature/oiiaite_ore.json
